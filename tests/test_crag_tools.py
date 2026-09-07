@@ -143,7 +143,10 @@ def test_heuristic_false_on_manual_or_offtopic_questions(q):
     ("core1 的 OSPF 邻居状态怎么样", ("show_ospf_neighbor",)),
     ("acc1 的日志看看", ("show_logging",)),
     ("arp 表里有啥", ("get_arp_table",)),
-    ("vlan 信息查看", ("show_vlan",)),
+    # 修复（t23-t28 闭合）：vlan 类二元组——show_vlan 证子接口存在/失链（down 子接口
+    # 无地址列，brief 不显示地址），running-config 的 `no ip address`+迁移命令序列
+    # 才能归因「地址迁到哪个新标签」，证据链闭合（与 shutdown/cost 类同构）
+    ("vlan 信息查看", ("show_vlan", "get_running_config")),
     ("core2 版本是多少", ("show_version",)),
     # 修复轮 1（t02 根因）：shutdown/接口类 → 接口摘要在前（含接口名与 up/down）、
     # 邻居表佐证；修复轮 2（t02 闭合）：+get_running_config 补 `shutdown` 配置行，
@@ -166,7 +169,7 @@ def test_select_state_tools_mapping(q, tools):
 def test_select_state_tools_priority_pins_for_e2e_questions():
     """优先级锚（修复轮 1 重排：vlan 先于 接口、接口 先于 邻居；修复轮 2 三元组）：
     - t01/t02（含 接口+邻居）→ 接口三元组（证据链闭合：down → 邻居消失 → shutdown 行）；
-    - t30（VLAN 子接口）→ 仍命中 vlan（「子接口」不得劫持 VLAN 类问题）；
+    - t30（VLAN 子接口）→ 仍命中 vlan 二元组（「子接口」不得劫持 VLAN 类问题）；
     - t17（检查/配置）→ get_running_config。"""
     triple = ("show_ip_interface_brief", "show_ospf_neighbor", "get_running_config")
     assert select_state_tools(
@@ -177,7 +180,7 @@ def test_select_state_tools_priority_pins_for_e2e_questions():
     ) == triple  # t02
     assert select_state_tools(
         "acc1 的 VLAN100 子接口的 IP 好像没了，帮我确认一下配置"
-    ) == ("show_vlan",)  # t30 不回归
+    ) == ("show_vlan", "get_running_config")  # t30 不回归
     assert select_state_tools(
         "core2 的 eth1 端口描述好像被人改过，帮我检查下当前的配置"
     ) == ("get_running_config",)  # t17 不回归

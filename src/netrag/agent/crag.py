@@ -95,7 +95,10 @@ _STATE_KEYWORDS: tuple[str, ...] = (
 _STATE_TOOL_MAP: tuple[tuple[tuple[str, ...], tuple[str, ...]], ...] = (
     (("日志", "log"), ("show_logging",)),
     (("arp",), ("get_arp_table",)),
-    (("vlan",), ("show_vlan",)),
+    # 修复（t23-t28 闭合，与 shutdown/cost 类同构）：vlan 类二元组——show_vlan 证
+    # 子接口存在/失链，但对 down 子接口不显示地址列；running-config 的
+    # `no ip address`+迁移命令序列才能归因「地址迁到哪个新标签」，证据链闭合
+    (("vlan",), ("show_vlan", "get_running_config")),
     (("版本", "version"), ("show_version",)),
     (("绕路", "绕远", "路径", "路由", "route"),
      ("show_ip_route", "get_running_config")),
