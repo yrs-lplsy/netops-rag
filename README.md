@@ -231,8 +231,7 @@ netops-rag/
 |---|---|
 | [docs/eval-design.md](docs/eval-design.md) | 三层判据口径设计、拒答可证伪两层、golden set 质量机制、TOC 缺陷案例、数字迭代史、RAGAS 迭代方案 |
 | [docs/eval-reports/](docs/eval-reports/) | S1 基线 / S2 对比消融 / S3 检索 / RAGAS 基线与 Run A/B 共 6 份脚本生成报告 |
-| [docs/reports/pdf-ingest-v1-report.md](docs/reports/pdf-ingest-v1-report.md) | PDF 摄取管线 v1：238 文档白名单、解析/切分实现、入库统计与耗时 |
-| [docs/superpowers/specs/2026-09-04-netops-rag-design.md](docs/superpowers/specs/2026-09-04-netops-rag-design.md) | 系统设计文档（背景、选型、数据流、存储、评测分层） |
+
 
 ## License
 
