@@ -20,7 +20,7 @@ flowchart LR
         G --> H[三路召回 RRF 融合<br/>+ bge-reranker 精排<br/>+ 父块窗口回填]
         H --> I[LangGraph CRAG<br/>打分→改写重检→拒答转人工]
         I --> J[引用式生成<br/>Qwen2.5-72B]
-        I -.设备实况问题.-> K[MCP 只读工具<br/>10 只读 + 2 写<br/>审批门]
+        I -.设备实况问题.-> K[MCP 只读工具<br/>12 只读 + 2 写<br/>审批门]
         K -.-> L[Containerlab<br/>FRR×4 + netopeer2]
     end
     E --> H
@@ -30,7 +30,7 @@ flowchart LR
 
 - **检索**：Milvus 2.5.6 standalone 单库承载稠密（bge-m3）+ 内置 BM25 函数 + bge-m3 稀疏三路召回，RRF 融合，bge-reranker-v2-m3 精排，父子 chunk（子块检索、父块整节回填生成），型号/软件版本标量过滤下推。
 - **Agent**：LangGraph CRAG 状态机——检索结果 LLM 打分（1-10），低分改写重检一轮，仍低分拒答转人工（handoff）；查询类型路由（exact/fuzzy/direct）；多轮指代消解；诊断类问题经 MCP 只读工具取设备实况。
-- **工具链**：FastMCP 12 个原子工具（10 只读 + 2 写），写操作走审批门 + 幂等 + 配置快照回滚。
+- **工具链**：FastMCP 14 个原子工具（12 只读 + 2 写，含 show_ip_route/ping），写操作走审批门 + 幂等 + 配置快照回滚。
 - **服务**：FastAPI（`/ask` `/diagnose` `/approvals`），Langfuse 可插拔观测，RAGAS judge 可切换。
 
 ## 三场景演示
