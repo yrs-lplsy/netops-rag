@@ -59,7 +59,7 @@ def test_short_parent_returned_whole():
     assert win == parent  # 无省略标记
 
 
-# ---------- SYSTEM prompt：杠杆②收紧（防参数化泄漏/编造），出处与兜底措辞不变 ----------
+# ---------- SYSTEM prompt：第二轮迭代收紧（防参数化泄漏/编造），出处与兜底措辞不变 ----------
 
 
 def test_system_keeps_citation_footer_and_notfound_fallback():

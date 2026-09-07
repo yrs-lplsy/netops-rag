@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from netrag.generation.llm import LLMClient
 from netrag.retrieval.base import RetrievedChunk
 
-# 杠杆②（2026-09-07）prompt 收紧：Run B 归因发现 3 条参数化泄漏（答案混入记忆中的、
+# 第二轮迭代（2026-09-07）prompt 收紧：Run B 归因发现 3 条参数化泄漏（答案混入记忆中的、
 # 片段里不存在的命令/步骤）+ 1 条编造（DeviceA→DeviceG），根因是 7B/72B 生成模型用
 # 自身知识补全手册片段未覆盖的细节。收紧后：逐论断须有片段原文依据，未覆盖内容显式
 # 标注交人工确认；【出处】页脚与"未找到"兜底措辞不变（既有契约，单测钉住）。
