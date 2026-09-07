@@ -119,6 +119,8 @@ def parse_args(argv=None):
     ap.add_argument("--vs", default="",
                     help="对照均值 faithfulness,relevancy,precision,recall（逗号分隔浮点，"
                          "与 --vs-label 搭配生成对照表）")
+    ap.add_argument("--vs-kind", default="纯装配差异",
+                    help="对照差异的性质标注（如 '纯 prompt 差异' / 'prompt+评分剥离 双变量合成差异'）")
     ap.add_argument("--timeout", type=int, default=60,
                     help="ragas RunConfig 单次 LLM 调用超时秒数（ragas 默认 60；"
                          "推理型 judge 如 DeepSeek 单调用常超 60s，需调大）")
@@ -224,6 +226,11 @@ def main() -> None:
     rows["跳过（无 ground truth）"] = str(result["skipped"])
     rows["单条失败"] = str(len(result["errors"]))
     rows["生成缓存命中（跳过生成 LLM）"] = str(result.get("cache_hits", 0))
+    # 伪影剥离审计：judge 只见 strip_eval_artifacts 后的答案，命中面必须可见
+    stripped_hits = sum(1 for p in per_item if p["stripped_len"] < p["raw_len"])
+    rows["伪影剥离命中（剥离后变短的条数）"] = str(stripped_hits)
+    removed = sum(p["raw_len"] - p["stripped_len"] for p in per_item)
+    rows["剥离字符总数"] = str(removed)
     # 各指标非空计数：NaN（judge 限速失败等）不计入均值，必须暴露覆盖面
     for m in means:
         valid = sum(1 for p in per_item if p.get(m) is not None)
@@ -246,12 +253,11 @@ def main() -> None:
             vs_rows.append(f"| {METRIC_LABELS[m]} | "
                            f"{'—' if now is None else f'{now:.3f}'} | {prev:.3f} | {delta} |")
         vs_section = f"""
-## 与 {args.vs_label} 对照（差异 = 纯装配差异）
+## 与 {args.vs_label} 对照（差异 = {args.vs_kind}）
 
-同抽样（50 条，seed=42）、同生成（缓存命中，答案逐字节一致）、同 judge（{judge_label}），
-唯一变量为 contexts 装配口径（child-chunks → {args.assembly}）；非空计数 <40 的指标只作参考。
+同抽样（50 条，seed=42）、同 judge（{judge_label}）、同装配（{args.assembly}）；非空计数 <40 的指标只作参考。
 
-| 指标 | 本次（assembly={args.assembly}） | {args.vs_label} | Δ |
+| 指标 | 本次（有效 n） | {args.vs_label} | Δ |
 |---|---|---|---|
 {chr(10).join(vs_rows)}
 """
@@ -280,6 +286,10 @@ def main() -> None:
 - 生成：{settings.llm_model}（SiliconFlow），answer_with_citations 父块窗口（cap 6000）；
   生成缓存命中 {result.get('cache_hits', 0)}/{n} 条（命中条目生成 LLM 零调用，答案与 T6 基线逐字节一致）
 {assembly_line}
+- 评分口径：**artifact-stripped**（judge 只见 ragas_runner.strip_eval_artifacts 剥离后的答案——
+  剥【出处】脚注块与"（手册片段未涉及，建议人工确认）"逃生舱句；两者恒被判无据陈述、
+  系统性压低 faithfulness（0.333=1/3 定量实证）并拖垮 relevancy；原始答案仍入生成缓存与
+  逐条记录（raw_len/stripped_len）可审计）
 - RAGAS：ragas {ragas.__version__}，judge={judge_label}（temperature=0，LangchainLLMWrapper）；
   嵌入：本地 {settings.embed_model}（dense，Bgem3LangchainEmbeddings）；
   ground truth = 期望子块全文（Milvus 点查拼接）；raise_exceptions=False

@@ -491,3 +491,83 @@ def test_run_ragas_parent_window_cache_stores_child_texts(monkeypatch, tmp_path)
     rows = json.loads(cache.read_text(encoding="utf-8"))["rows"]
     assert rows[0]["retrieved_contexts"] == [child, "hit1"]
     assert "…[前文省略]…" not in json.dumps(rows, ensure_ascii=False)
+
+
+# ---------- 评测侧伪影剥离：strip_eval_artifacts + run_ragas 接线 ----------
+
+
+def test_strip_eval_artifacts_footer_only_answer_becomes_empty():
+    """答案只剩【出处】脚注块 → 剥离后为空（faithfulness 不再被脚注行计为无据陈述）。"""
+    from netrag.eval.ragas_runner import strip_eval_artifacts
+
+    ans = "【出处】\n[1] 华为/以太网交换/VLAN 配置（hw-v600#c15）\n[2] 另一面包屑（d2）"
+    assert strip_eval_artifacts(ans) == ""
+
+
+def test_strip_eval_artifacts_removes_footer_keeps_content():
+    from netrag.eval.ragas_runner import strip_eval_artifacts
+
+    ans = ("eth1.100 子接口未配置 IPv4 地址。\n\n"
+           "【出处】\n[1] 配置指南/VLAN（d1）\n[2] 故障处理/接口管理（d2）")
+    out = strip_eval_artifacts(ans)
+    assert "eth1.100 子接口未配置 IPv4 地址。" in out
+    assert "【出处】" not in out
+    assert "配置指南" not in out
+    assert out.endswith("eth1.100 子接口未配置 IPv4 地址。")
+
+
+def test_strip_eval_artifacts_removes_escape_hatch_sentence():
+    """逃生舱句（手册片段未涉及，建议人工确认）整句剥离，含句号与行内前缀。"""
+    from netrag.eval.ragas_runner import strip_eval_artifacts
+
+    ans = ("配置步骤如下：执行 display this 查看配置。\n"
+           "补全 STP 模式命令（手册片段未涉及，建议人工确认）。\n"
+           "最后保存配置。")
+    out = strip_eval_artifacts(ans)
+    assert "手册片段未涉及" not in out
+    assert "补全 STP 模式命令" not in out  # 整句（含前缀）被剥
+    assert "display this 查看配置" in out
+    assert "最后保存配置" in out
+
+
+def test_strip_eval_artifacts_normal_content_untouched():
+    from netrag.eval.ragas_runner import strip_eval_artifacts
+
+    ans = "端口配置为 trunk 模式，允许 VLAN 100 通过。\n配置命令：port link-type trunk。"
+    assert strip_eval_artifacts(ans) == ans
+
+
+def test_run_ragas_scores_stripped_response_keeps_raw_in_cache_and_records(monkeypatch, tmp_path):
+    """接线：RAGAS 拿剥离后答案打分；缓存与 per_item 保留原始答案 + 双长度记录。"""
+    client = FakeClient([{"chunk_id": "g1", "text": "期望文本1"}])
+    ret = FakeRetriever(client)
+
+    class FooterLLM:
+        def __init__(self) -> None:
+            self.calls = []
+
+        def chat(self, messages, temperature=0.2, max_tokens=2048):
+            self.calls.append(messages)
+            return ("真实内容句。\n"
+                    "标注句（手册片段未涉及，建议人工确认）。\n"
+                    "【出处】\n[1] 面包屑（d1）")
+
+    captured: dict = {}
+    df = pd.DataFrame({"user_input": ["问题q1"], "faithfulness": [0.9],
+                       "answer_relevancy": [0.9], "context_precision": [0.9],
+                       "context_recall": [0.9]})
+    _install_fake_evaluate(monkeypatch, captured, df)
+    cache = tmp_path / "gen.json"
+    out = run_ragas([_mk_item("q1", ["g1"])], ret, FooterLLM(), judge_llm=object(),
+                    embeddings=object(), k=1, progress_every=0,
+                    gen_cache_path=cache, cache_key="k1")
+    # judge 看到的是剥离后答案：脚注块与逃生舱句都不进 EvaluationDataset
+    resp = captured["rows"][0]["response"]
+    assert resp == "真实内容句。"
+    assert "【出处】" not in resp and "手册片段未涉及" not in resp
+    # 缓存保留原始答案（未来换剥离规则可重评，不必重新生成）
+    cached_resp = json.loads(cache.read_text(encoding="utf-8"))["rows"][0]["response"]
+    assert "标注句" in cached_resp and "【出处】" in cached_resp
+    # per_item 双长度记录
+    rec = out["per_item"][0]
+    assert rec["raw_len"] > rec["stripped_len"] > 0

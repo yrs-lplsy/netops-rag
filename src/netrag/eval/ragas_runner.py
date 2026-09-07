@@ -16,6 +16,7 @@ langchain_community.chat_models.vertexai，0.4 里已删），故 langchain 全�
 """
 
 import json
+import re
 from pathlib import Path
 
 import ragas
@@ -24,6 +25,34 @@ from langchain_core.embeddings import Embeddings
 from netrag.config import Settings
 from netrag.eval.golden import GoldenItem
 from netrag.retrieval.base import RetrievedChunk
+
+
+# 评测侧伪影（eval-design §7 归因表 + Run C caveats 的定量实证）：
+# ①【出处】脚注块——生成答案末尾的引用列表，faithfulness 陈述拆分恒计为"无据句"
+#   （hw-…-alarm-01-67#c15 的 0.333=1/3 即 2 条脚注行所致）；
+# ②逃生舱句——prompt 要求对片段未覆盖内容显式标注"（手册片段未涉及，建议人工确认）"，
+#   该句同样被计为无据陈述，且与 relevancy 塌 0 强关联（Run C 两条 0.854/0.967→0）。
+# 两者都是评分口径伪影而非语义缺陷，判前剥离；原始答案仍入缓存/记录可审计。
+_FOOTER_MARK = "【出处】"
+_ESCAPE_HATCH = "（手册片段未涉及，建议人工确认）"
+# 逃生舱句：从上一句界（。！？；或换行）之后到标记及其句末标点的整句
+_ESCAPE_SENT_RE = re.compile(r"[^。！？；\n]*" + re.escape(_ESCAPE_HATCH) + r"[。！？；]?")
+
+
+def strip_eval_artifacts(answer: str) -> str:
+    """剥离答案中的评测伪影：【出处】脚注块（该行至末尾）与逃生舱句，返回供 judge 打分的文本。
+
+    纯函数、幂等；正常内容句不受影响。脚注块整体删除（含其后所有引用行）；
+    逃生舱句按句删除（含句内标记前的前缀与句末标点）。两步都不改写保留内容。
+    """
+    lines = answer.splitlines()
+    for i, ln in enumerate(lines):
+        if ln.lstrip().startswith(_FOOTER_MARK):
+            lines = lines[:i]
+            break
+    text = "\n".join(lines)
+    text = _ESCAPE_SENT_RE.sub("", text)
+    return text.rstrip()  # 脚注/句剥离残留的行尾空白一并去掉，保留内容不被改写
 
 
 class Bgem3LangchainEmbeddings(Embeddings):
@@ -179,6 +208,7 @@ def run_ragas(items: list[GoldenItem], retriever, llm_client,
 
     errors: list[tuple[str, str]] = []
     evaluated: list[tuple[GoldenItem, dict]] = []
+    dataset_rows: list[dict] = []  # judge 可见行（response 已剥离伪影）
     child_texts_by_qid: dict[str, list[str]] = {}  # 缓存持久化用：原始 child 文本（校验基准）
     cache_hits = 0
     ctx_mismatch: list[tuple[str, list[str], list[str]]] = []
@@ -208,10 +238,13 @@ def run_ragas(items: list[GoldenItem], retriever, llm_client,
             continue
         row = {
             "user_input": it.question,
-            "response": response,
+            "response": response,  # 原始答案：进缓存与 per_item 记录（可审计/可换剥离规则重评）
             "retrieved_contexts": _assemble_contexts(chunks, assembly),
             "reference": "\n\n".join(gt[cid] for cid in it.expected_chunk_ids),
         }
+        # 判前剥离评分伪影（【出处】脚注块 + 逃生舱句）：只影响 judge 可见的 response，
+        # 不回写 row/缓存（评审归因：脚注行恒判无据句，Run C 定量实证 0.333=1/3）
+        dataset_rows.append({**row, "response": strip_eval_artifacts(response)})
         evaluated.append((it, row))
         if progress_every and (len(evaluated) % progress_every == 0 or i == total):
             print(f"[ragas-run] {len(evaluated)}/{total} 条已就绪（{it.qid}）", flush=True)
@@ -244,7 +277,7 @@ def run_ragas(items: list[GoldenItem], retriever, llm_client,
                 "skipped": len(skipped_detail), "skipped_detail": skipped_detail,
                 "errors": errors}
 
-    dataset = EvaluationDataset.from_list([row for _, row in evaluated])
+    dataset = EvaluationDataset.from_list(dataset_rows)
     metrics = [Faithfulness(), ResponseRelevancy(), ContextPrecision(), ContextRecall()]
     # 经模块属性调用（非 from-import 绑定）：单测 monkeypatch ragas.evaluate 可生效
     result = ragas.evaluate(dataset, metrics=metrics, llm=judge_llm, embeddings=embeddings,
@@ -261,11 +294,15 @@ def run_ragas(items: list[GoldenItem], retriever, llm_client,
             "拒绝逐行对齐（防止分数错配到错误 qid）")
     metric_names = [m.name for m in metrics]
     per_item = []
-    for (it, _), (_, drow) in zip(evaluated, df.iterrows()):
+    for (it, row), (_, drow) in zip(evaluated, df.iterrows()):
         rec: dict = {"qid": it.qid, "qtype": it.qtype}
         for m in metric_names:
             v = drow.get(m)
             rec[m] = None if v is None or pd.isna(v) else float(v)
+        # 双长度记录：原始/剥离后答案长度（伪影剥离口径的审计面）
+        raw = row["response"]
+        rec["raw_len"] = len(raw)
+        rec["stripped_len"] = len(strip_eval_artifacts(raw))
         per_item.append(rec)
     means = {}
     for m in metric_names:
