@@ -1,0 +1,869 @@
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c8
+  question: 默认VTP版本支持多少长度的VLAN名称？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c8
+  filters:
+    vendor: null
+    model: null
+    sw_version: '17.9'
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c15
+  question: 在 VTP version 1 或 2 下创建扩展范围 VLAN 时，需要将 VTP 模式设置为什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c15
+  filters:
+    vendor: null
+    model: null
+    sw_version: '17.9'
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c25
+  question: VTP version 3 支持的 VLAN 名称长度最多是多少个字符？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c25
+  filters:
+    vendor: null
+    model: null
+    sw_version: '17.9'
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c35
+  question: 删除一个VLAN后其关联的端口会怎样？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c35
+  filters:
+    vendor: null
+    model: null
+    sw_version: '17.9'
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c49
+  question: 使用接口模板给接口应用 VLAN 命令前，需要先做什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c49
+  filters:
+    vendor: null
+    model: null
+    sw_version: '17.9'
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c60
+  question: 可以将端口分配给哪个范围的VLAN？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c60
+  filters:
+    vendor: null
+    model: null
+    sw_version: '17.9'
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c78
+  question: 创建扩展范围 VLAN 时，将 VLAN 配置为 RSPAN VLAN 是必需步骤还是可选步骤？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c78
+  filters:
+    vendor: null
+    model: null
+    sw_version: '17.9'
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c8
+  question: 可以配置多少个VLAN同时生效？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c8
+  filters:
+    vendor: null
+    model: null
+    sw_version: '17.7'
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c10
+  question: static access 端口最多可以属于几个 VLAN？成员关系如何指定？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c10
+  filters:
+    vendor: null
+    model: null
+    sw_version: '17.7'
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c15
+  question: 在 VTP version 1 或 2 下创建扩展范围 VLAN 时，需要将 VTP 模式设置为什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c15
+  filters:
+    vendor: null
+    model: null
+    sw_version: '17.7'
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c25
+  question: vlan 配置模式下的 media 命令可以把 VLAN 媒体类型设置成哪些值？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c25
+  filters:
+    vendor: null
+    model: null
+    sw_version: '17.7'
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c35
+  question: 删除一个VLAN后 会使得该VLAN分配的端口变为不活跃状态吗？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c35
+  filters:
+    vendor: null
+    model: null
+    sw_version: '17.7'
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c49
+  question: 如果将一个静态接口分配给一个不存在的VLAN，会发生什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c49
+  filters:
+    vendor: null
+    model: null
+    sw_version: '17.7'
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c60
+  question: 可以将端口分配给哪个范围的VLAN ID？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c60
+  filters:
+    vendor: null
+    model: null
+    sw_version: '17.7'
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c78
+  question: 创建扩展范围 VLAN 时，将 VLAN 配置为 RSPAN VLAN 是必需步骤还是可选步骤？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c78
+  filters:
+    vendor: null
+    model: null
+    sw_version: '17.7'
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c1
+  question: 如何配置基本的OSPF参数？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c1
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c4
+  question: 如何配置OSPF for IPv6？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c4
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c8
+  question: NSF-capable 路由器在网络段上发现非 NSF-aware 邻居时会怎么做？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c8
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c16
+  question: OSPF的Hello间隔时间是多少秒？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c16
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c21
+  question: 配置特权EXEC模式需要输入什么命令？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c21
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c39
+  question: 在启用IPv6 OSPf时，三层接口上需要执行哪些命令？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c39
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c46
+  question: 在OSPF路由器配置模式中，过程ID可以是什么范围的数字？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c46
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c50
+  question: IPv6 OSPF命令中可以设置的最大等值等路由数量是多少？默认值是多少？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c50
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c65
+  question: 您需要使用哪些命令来修改特定的OSPF参数？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c65
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c69
+  question: 如何进入特权EXEC模式需要输入哪个命令？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c69
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c95
+  question: 如何显示OSPF相关的接口信息？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c95
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c101
+  question: enable 命令的用途是什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c101
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c107
+  question: 在配置OSPF路由时，需要使用哪个命令进入路由器配置模式？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c107
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c119
+  question: 返回特权EXEC模式需要使用什么命令？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c119
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c140
+  question: auto-cost reference-bandwidth 命令的作用是什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c140
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c145
+  question: 配置了哪些接口为被动接口？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c145
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c157
+  question: enable 命令用于做什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c157
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c178
+  question: 在创建的Loopback接口上，使用什么命令可以设置接口地址和子网掩码？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c178
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c1
+  question: Spanning Tree协议中，设备的端口如何成为根设备的端口是如何定义的？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c1
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c7
+  question: Spanning Tree Protocol选举根设备时使用哪个设备作为冗余连接网络的根节点？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c7
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c11
+  question: 在每个VLAN中，具有最高设备优先级（即最低数值优先级值）的设备会被选为根设备吗？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c11
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c14
+  question: 设置VLAN的桥优先级如何影响根桥的选举？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c14
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c17
+  question: 当计时延迟定时器超时后，生成树协议是如何操作的？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c17
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c24
+  question: 您可以通过使用EtherChannel组来创建设备之间的冗余链接吗？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c24
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c31
+  question: Rapid PVST可以转换为哪种模式？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c31
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c50
+  question: 进入特权EXEC模式需要使用哪个命令？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c50
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c56
+  question: 启用命令enable的用途是什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c56
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c62
+  question: VLAN ID 的范围是从 1 到 4094 吗？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c62
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c87
+  question: enable 命令用于启用哪种功能或 操作？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c87
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c93
+  question: 在配置接口时需要使用哪个命令进入接口配置模式？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c93
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c101
+  question: 启用特权模式的命令是什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c101
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c111
+  question: 对于VLAN ID，可以指定单个VLAN ID号码、VLAN ID范围或多个VLAN ID系列，如何指定？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c111
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c116
+  question: 如何配置VLAN的设备优先级？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c116
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c121
+  question: 什么命令用于设置指定 VLAN 的生成树优先级？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c121
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c151
+  question: 配置VLAN的最大重配置等待时间的范围是多少？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c151
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c3
+  question: 在配置VLAN之前，设备上是否需要将SDM模板设置为Access模板以配置系统资源以支持未播MAC地址？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c3
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c16
+  question: 配置Normal-Range VLANs和Extended-Range VLANs的相关信息可以在哪些部分找到？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c16
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c19
+  question: 配置终端模式命令configure terminal的用途是什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c19
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c23
+  question: 创建或修改 VLAN 时应输入的 VLAN ID 范围是多少？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c23
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c29
+  question: 如何返回特权EXEC模式？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c29
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c34
+  question: 在VTP透明模式下，特定设备上删除以太网VLAN会有什么影响？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c34
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c42
+  question: 如何通过输入VLAN ID来删除VLAN？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c42
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c76
+  question: 远程SPAN的VLAN ID是多少范围？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c76
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c88
+  question: 可以显示指定VLAN的接口特性吗？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c88
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c5
+  question: MAC地址学习到 Layer 3接口、SVI和路由端口时是否会因为多个接口捆绑而受到影响？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c5
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c34
+  question: 在VTP透明模式下，特定设备上删除以太网VLAN是否会从VTP域的VLAN数据库中删除该VLAN？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c34
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c48
+  question: 配置后是否可以保存配置条目？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c48
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c72
+  question: 进入特权EXEC模式需要输入密码，步骤是什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c72
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c76
+  question: 可以用哪个数值范围的VLAN ID进入VLAN配置模式？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c76
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c3
+  question: OSPF版本支持哪些特性可以通过配置进行调整？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c3
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c5
+  question: OSPF协议支持NSF（网络生存性转发）的哪两个方面？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c5
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c7
+  question: 当OSPF NSF-capable堆栈中的活动成员发生故障时，堆栈将如何重新同步其链路状态数据库？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c7
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c9
+  question: 如何验证OSPF NSF路由已启用？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c9
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c10
+  question: 可以在OSPF区域内配置哪些参数？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c10
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c11
+  question: 在将路由从其他协议重分布进OSPF路由域时，使用哪个命令可以汇总重分布的路由？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c11
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c2
+  question: 如何配置生成树协议？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c2
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c3
+  question: 如何查看生成树协议配置状态？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c3
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c8
+  question: 在生成树协议中，端口优先级值如何确定端口的转发状态和阻塞状态？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c8
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c9
+  question: 默认情况下，设备在哪些层的端口上启用 keepalive 消息？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c9
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c2
+  question: 在哪里可以找到VLAN的功能历史记录？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c2
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c4
+  question: 配置SVI时，SVI的MAC地址的前四位必须如何配置？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c4
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c18
+  question: 在VTP透明模式下，设备支持的VLAN ID范围是多少？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c18
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c21
+  question: 进入配置模式需要使用哪个命令？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c21
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c27
+  question: 如何设置VLAN的以太网类型？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c27
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c40
+  question: no vlan vlan-id 命令的作用是什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c40
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c46
+  question: 如何保存VLAN配置？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c46
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c4
+  question: 配置SVI时，路由器接口的MAC地址必须以哪些四位显著位（4MSb）开头吗？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c4
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c9
+  question: 配置端口属于VLAN时需要使用哪种成员模式以及该模式指定的流量类型和端口所属的VLAN数量是多少？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c9
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c12
+  question: 重置交换机配置前需要删除哪些文件？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c12
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c17
+  question: 在创建或修改 VLAN 时，可以设置哪些参数？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c17
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c40
+  question: no vlan vlan-id 命令如何删除 VLAN？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c40
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c44
+  question: 怎样返回到特权EXEC模式？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c44
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c50
+  question: 启用命令“enable”的目的是什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c50
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c13
+  question: OSPF LSA组节拍间隔默认值是多少分钟？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c13
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c14
+  question: OSPF使用哪个接口的最高IP地址作为路由器ID？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c14
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c17
+  question: OSPF 虚链路（virtual link）的 Hello interval 默认是多少秒？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c17
+  filters: null
+- qid: cisco-c9300-17.9-ospf#cisco-c9300-17.9-ospf#c18
+  question: 运行 Network Essentials 镜像的交换机支持配置哪两种 OSPFv2 NSF 格式？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ospf
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ospf#c18
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c19
+  question: 处于监听（listening）状态的接口会执行哪些功能？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c19
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c20
+  question: 一个处于学习状态的接口会执行哪些操作？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c20
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c22
+  question: 一个处于disabled状态的接口是否会转发数据帧？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c22
+  filters: null
+- qid: cisco-c9300-17.9-stp#cisco-c9300-17.9-stp#c26
+  question: spanning-tree 重新配置时，动态地址的老化时间会如何变化？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-stp
+  expected_chunk_ids:
+  - cisco-c9300-17.9-stp#c26
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c58
+  question: switchport access vlan vlan-id 命令的作用是什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c58
+  filters: null
+- qid: cisco-c9300-17.9-vlan#cisco-c9300-17.9-vlan#c66
+  question: 如何验证接口的 Administrative Mode 和 Access Mode VLAN 条目？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan#c66
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c58
+  question: 将接入端口划入 VLAN 使用哪条命令？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c58
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c62
+  question: 用什么命令查看指定接口的运行配置？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c62
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c66
+  question: 用什么命令可以查看接口的 Administrative Mode 和 Access Mode VLAN 条目？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c66
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c69
+  question: 在扩展范围 VLAN 上仅能更改哪些配置参数？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c69
+  filters: null
+- qid: cisco-c9300-17.7-vlan#cisco-c9300-17.7-vlan#c80
+  question: end 命令从 VLAN 配置模式返回到什么模式？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.7-vlan
+  expected_chunk_ids:
+  - cisco-c9300-17.7-vlan#c80
+  filters: null

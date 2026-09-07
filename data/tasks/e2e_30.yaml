@@ -1,0 +1,384 @@
+version: t14-phase1
+description: 30 条端到端排障评测任务（5 类故障 × lab 可表达变体；分布 shutdown6/cost7/desc9/avw6/no_vlan2——no_vlan 物理上限 2：基线仅一对
+  VLAN100 子接口；待人工校准后跑全量）
+schema: '{task_id, fault:{host,kind,param}, question, expected_conclusion, expected_tools, difficulty}'
+tasks:
+- task_id: t01
+  fault:
+    host: core1
+    kind: shutdown_interface
+    param:
+      iface: eth2
+  question: core1 与 acc1 之间的 OSPF 邻居关系突然断了，这条链路好像不通了，帮我看看接口状态
+  expected_conclusion: core1 的 eth2 接口被管理性 shutdown
+  expected_tools:
+  - show_ospf_neighbor
+  - show_ip_interface_brief
+  - get_running_config
+  difficulty: medium
+- task_id: t02
+  fault:
+    host: core1
+    kind: shutdown_interface
+    param:
+      iface: eth3
+  question: core1 的 eth3 接口好像有问题，OSPF 邻居关系断了，业务也中断了，帮我看看
+  expected_conclusion: core1 的 eth3 接口被管理性 shutdown
+  expected_tools:
+  - show_ospf_neighbor
+  - show_ip_interface_brief
+  - get_running_config
+  difficulty: easy
+- task_id: t03
+  fault:
+    host: core2
+    kind: shutdown_interface
+    param:
+      iface: eth2
+  question: core2 与 acc1 之间的链路好像出问题了，OSPF 邻居关系断了，帮我看看接口状态
+  expected_conclusion: core2 的 eth2 接口被管理性 shutdown
+  expected_tools:
+  - show_ospf_neighbor
+  - show_ip_interface_brief
+  - get_running_config
+  difficulty: medium
+- task_id: t04
+  fault:
+    host: core2
+    kind: shutdown_interface
+    param:
+      iface: eth3
+  question: core2 的 eth3 接口对 acc2 的 OSPF 邻居关系断了，业务也中断了，帮我看看接口状态
+  expected_conclusion: core2 的 eth3 接口被管理性 shutdown
+  expected_tools:
+  - show_ospf_neighbor
+  - show_ip_interface_brief
+  - get_running_config
+  difficulty: easy
+- task_id: t05
+  fault:
+    host: acc1
+    kind: shutdown_interface
+    param:
+      iface: eth1
+  question: acc1 与 core1 之间的 OSPF 邻居关系突然断了，这条链路好像不通了，帮我看看接口状态
+  expected_conclusion: acc1 的 eth1 接口被管理性 shutdown
+  expected_tools:
+  - show_ospf_neighbor
+  - show_ip_interface_brief
+  - get_running_config
+  difficulty: medium
+- task_id: t06
+  fault:
+    host: acc2
+    kind: shutdown_interface
+    param:
+      iface: eth1
+  question: acc2 的 eth1 接口好像有问题，OSPF 邻居关系断了，业务也中断了，帮我看看
+  expected_conclusion: acc2 的 eth1 接口被管理性 shutdown
+  expected_tools:
+  - show_ospf_neighbor
+  - show_ip_interface_brief
+  - get_running_config
+  difficulty: easy
+- task_id: t07
+  fault:
+    host: core1
+    kind: ospf_cost_skyhigh
+    param:
+      iface: eth1
+      cost: 65535
+  question: core1 到 core2 的流量这两天绕路了，延迟明显变大，帮我检查下配置有没有被动过
+  expected_conclusion: core1 的 eth1 接口被配置了 ip ospf cost 65535，异常抬高链路成本
+  expected_tools:
+  - get_running_config
+  - show_ospf_neighbor
+  difficulty: hard
+- task_id: t08
+  fault:
+    host: core1
+    kind: ospf_cost_skyhigh
+    param:
+      iface: eth2
+      cost: 65535
+  question: core1 到 acc1 的业务流量好像绕路了，监控显示延迟变大，帮我检查一下当前的配置
+  expected_conclusion: core1 的 eth2 接口被配置了 ip ospf cost 65535，异常抬高链路成本
+  expected_tools:
+  - get_running_config
+  - show_ospf_neighbor
+  difficulty: hard
+- task_id: t09
+  fault:
+    host: core1
+    kind: ospf_cost_skyhigh
+    param:
+      iface: eth3
+      cost: 65535
+  question: core1 与 acc2 之间的流量路径不太对劲，好像绕远了，帮我查一下配置
+  expected_conclusion: core1 的 eth3 接口被配置了 ip ospf cost 65535，异常抬高链路成本
+  expected_tools:
+  - get_running_config
+  - show_ospf_neighbor
+  difficulty: medium
+- task_id: t10
+  fault:
+    host: core2
+    kind: ospf_cost_skyhigh
+    param:
+      iface: eth2
+      cost: 65535
+  question: core2 到 acc1 的流量最近绕路了，排障时链路看着都是通的，帮我检查下配置有没有问题
+  expected_conclusion: core2 的 eth2 接口被配置了 ip ospf cost 65535，异常抬高链路成本
+  expected_tools:
+  - get_running_config
+  - show_ospf_neighbor
+  difficulty: hard
+- task_id: t11
+  fault:
+    host: core2
+    kind: ospf_cost_skyhigh
+    param:
+      iface: eth3
+      cost: 65535
+  question: core2 与 acc2 之间的流量好像绕远了，帮忙查一下配置
+  expected_conclusion: core2 的 eth3 接口被配置了 ip ospf cost 65535，异常抬高链路成本
+  expected_tools:
+  - get_running_config
+  - show_ospf_neighbor
+  difficulty: medium
+- task_id: t12
+  fault:
+    host: acc1
+    kind: ospf_cost_skyhigh
+    param:
+      iface: eth1
+      cost: 65535
+  question: acc1 到 core1 的流量路径不对劲，好像没走直连链路，帮我检查下当前的配置
+  expected_conclusion: acc1 的 eth1 接口被配置了 ip ospf cost 65535，异常抬高链路成本
+  expected_tools:
+  - get_running_config
+  - show_ospf_neighbor
+  difficulty: medium
+- task_id: t13
+  fault:
+    host: acc2
+    kind: ospf_cost_skyhigh
+    param:
+      iface: eth1
+      cost: 65535
+  question: acc2 与 core1 之间的流量似乎绕路了，查一下配置看看哪里改过
+  expected_conclusion: acc2 的 eth1 接口被配置了 ip ospf cost 65535，异常抬高链路成本
+  expected_tools:
+  - get_running_config
+  - show_ospf_neighbor
+  difficulty: medium
+- task_id: t14
+  fault:
+    host: core1
+    kind: description_garbage
+    param:
+      iface: eth1
+      text: tmp-by-jack-2024
+  question: core1 上有个端口的描述被巡检标红说不符合规范，帮我检查下当前配置写的什么、是哪个端口
+  expected_conclusion: core1 的 eth1 接口描述被改为 tmp-by-jack-2024
+  expected_tools:
+  - get_running_config
+  difficulty: medium
+- task_id: t15
+  fault:
+    host: core1
+    kind: description_garbage
+    param:
+      iface: eth2
+      text: GARBAGE-8fkz93
+  question: core1 的 eth2 端口描述好像被人改乱了，帮我检查下当前的配置
+  expected_conclusion: core1 的 eth2 接口描述被改为 GARBAGE-8fkz93
+  expected_tools:
+  - get_running_config
+  difficulty: easy
+- task_id: t16
+  fault:
+    host: core1
+    kind: description_garbage
+    param:
+      iface: eth3
+      text: asdf-test-port
+  question: core1 有个端口的描述被改成了奇怪的内容，帮我查看下配置确认是哪个端口
+  expected_conclusion: core1 的 eth3 接口的 description 被改为乱码 asdf-test-port
+  expected_tools:
+  - get_running_config
+  difficulty: medium
+- task_id: t17
+  fault:
+    host: core2
+    kind: description_garbage
+    param:
+      iface: eth1
+      text: xx-unknown-777
+  question: core2 的 eth1 端口描述好像被人改过，帮我检查下当前的配置
+  expected_conclusion: core2 的 eth1 接口的 description 被改为乱码 xx-unknown-777
+  expected_tools:
+  - get_running_config
+  difficulty: easy
+- task_id: t18
+  fault:
+    host: core2
+    kind: description_garbage
+    param:
+      iface: eth2
+      text: TODO-fix-this
+  question: core2 上有个端口的描述不太对劲，帮我检查下配置
+  expected_conclusion: core2 的 eth2 接口的 description 被改为乱码 TODO-fix-this
+  expected_tools:
+  - get_running_config
+  difficulty: medium
+- task_id: t19
+  fault:
+    host: core2
+    kind: description_garbage
+    param:
+      iface: eth3
+      text: old-cable-spare
+  question: core2 有条链路的端口描述被人改成了无关内容，帮我查看下配置是哪个端口
+  expected_conclusion: core2 的 eth3 接口的 description 被改为乱码 old-cable-spare
+  expected_tools:
+  - get_running_config
+  difficulty: medium
+- task_id: t20
+  fault:
+    host: acc1
+    kind: description_garbage
+    param:
+      iface: eth1
+      text: junk-entry-99
+  question: acc1 有个端口的配置描述看起来被人动过，帮我检查下当前的配置
+  expected_conclusion: acc1 的 eth1 接口的 description 被改为乱码 junk-entry-99
+  expected_tools:
+  - get_running_config
+  difficulty: medium
+- task_id: t21
+  fault:
+    host: acc2
+    kind: description_garbage
+    param:
+      iface: eth1
+      text: RandomDesc-4832
+  question: acc2 上有个端口的描述疑似被人改过，帮我检查下配置确认
+  expected_conclusion: acc2 的 eth1 接口的 description 被改为乱码 RandomDesc-4832
+  expected_tools:
+  - get_running_config
+  difficulty: medium
+- task_id: t22
+  fault:
+    host: acc2
+    kind: description_garbage
+    param:
+      iface: eth2
+      text: qazwsx-0001
+  question: acc2 的 eth2 端口描述好像不对，帮我查看下当前的配置
+  expected_conclusion: acc2 的 eth2 接口的 description 被改为乱码 qazwsx-0001
+  expected_tools:
+  - get_running_config
+  difficulty: easy
+- task_id: t23
+  fault:
+    host: acc1
+    kind: access_vlan_wrong
+    param:
+      mode: retag
+      vlan: 200
+  question: acc1 的网管 VLAN100 好像不通了，巡检发现它的配置不对劲，帮我查一下
+  expected_conclusion: acc1 的 VLAN100 地址 10.100.0.2/24 从 eth1.100 被迁到错误标签 eth1.200
+  expected_tools:
+  - get_running_config
+  - show_vlan
+  difficulty: medium
+- task_id: t24
+  fault:
+    host: acc1
+    kind: access_vlan_wrong
+    param:
+      mode: retag
+      vlan: 300
+  question: acc1 上 VLAN100 的网段互通有问题，领导让今天必须查清楚，帮我查看下它的配置
+  expected_conclusion: acc1 的 VLAN100 地址 10.100.0.2/24 从 eth1.100 被迁到错误标签 eth1.300
+  expected_tools:
+  - get_running_config
+  - show_vlan
+  difficulty: medium
+- task_id: t25
+  fault:
+    host: acc1
+    kind: access_vlan_wrong
+    param:
+      mode: wrong_port
+      new_parent: eth2
+  question: acc1 的 VLAN100 业务断了，网络组怀疑有人动过配置，帮我检查下 VLAN100 当前的状态
+  expected_conclusion: acc1 的 VLAN100 地址 10.100.0.2/24 从 eth1.100 被迁到错误物理口 eth2.100
+  expected_tools:
+  - get_running_config
+  - show_vlan
+  difficulty: hard
+- task_id: t26
+  fault:
+    host: core1
+    kind: access_vlan_wrong
+    param:
+      mode: retag
+      vlan: 200
+  question: core1 的 VLAN100 网段好像不通了，巡检发现配置不对劲，帮我查一下
+  expected_conclusion: core1 的 VLAN100 地址 10.100.0.1/24 从 eth2.100 被迁到错误标签 eth2.200
+  expected_tools:
+  - get_running_config
+  - show_vlan
+  difficulty: medium
+- task_id: t27
+  fault:
+    host: core1
+    kind: access_vlan_wrong
+    param:
+      mode: retag
+      vlan: 300
+  question: 监控显示 core1 的 VLAN100 互通丢包 100%，帮忙查看下配置上哪里不对
+  expected_conclusion: core1 的 VLAN100 地址 10.100.0.1/24 从 eth2.100 被迁到错误标签 eth2.300
+  expected_tools:
+  - get_running_config
+  - show_vlan
+  difficulty: medium
+- task_id: t28
+  fault:
+    host: core1
+    kind: access_vlan_wrong
+    param:
+      mode: wrong_port
+      new_parent: eth3
+  question: core1 的 VLAN100 业务中断了，变更组说昨晚没有相关变更窗口，帮我查看下 VLAN 的当前状态
+  expected_conclusion: core1 的 VLAN100 地址 10.100.0.1/24 从 eth2.100 被迁到错误物理口 eth3.100
+  expected_tools:
+  - get_running_config
+  - show_vlan
+  difficulty: hard
+- task_id: t29
+  fault:
+    host: core1
+    kind: no_vlan
+    param:
+      vlan: 100
+  question: core1 的 VLAN100 网段好像不通了，帮我检查下配置有没有问题
+  expected_conclusion: core1 的 VLAN100 子接口 eth2.100 被摘除 IP 10.100.0.1/24
+  expected_tools:
+  - get_running_config
+  - show_vlan
+  difficulty: medium
+- task_id: t30
+  fault:
+    host: acc1
+    kind: no_vlan
+    param:
+      vlan: 100
+  question: acc1 的 VLAN100 子接口的 IP 好像没了，帮我确认一下配置
+  expected_conclusion: acc1 的 VLAN100 子接口 eth1.100 被摘除 IP 10.100.0.2/24
+  expected_tools:
+  - get_running_config
+  - show_vlan
+  difficulty: easy

@@ -1,0 +1,25 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/raw/
+# data/processed/ 纳入 git 管理（spec §7：data/ 是 git 管理的 ground truth）；
+# data/raw/ 仍忽略：原始 HTML/PDF 体积大且可经 manifest 重新抓取。
+# data/pdf/ 与 data/raw/ 同策略：650MB 原始 PDF 语料不入 git，
+# 白名单与路径记录在 data/manifests/pdf_v1.yaml，转换产物 data/processed_pdf/ 入 git。
+data/pdf/
+models_cache/
+
+# LLM 回复磁盘缓存（生成可复现，体积大不入 git）
+data/llm_cache/
+
+# Tracer 本地兜底 trace 文件（每次运行一个 jsonl）
+data/traces/
+
+# containerlab 运行时状态/密钥（lab 部署产物）
+deploy/containerlab/clab-netops/
+
+# T12 MCP 设备工具链产物：设备快照=配置泄露面，审批记录=安全凭证，均不入 git
+data/snapshots/
+data/approvals.jsonl

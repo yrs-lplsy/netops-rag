@@ -1,0 +1,48 @@
+[project]
+name = "netrag"
+version = "0.1.0"
+description = "Agentic RAG for network device Q&A and troubleshooting"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "pymilvus>=2.5.0,<2.6",
+    "FlagEmbedding>=1.3.0",
+    "transformers>=4.44",
+    "openai>=1.40",  # 被 langchain-openai 0.3.x 钉到 2.54，勿手动升级（ragas 0.3.x 兼容线）
+    "python-dotenv>=1.0",
+    "pyyaml>=6.0",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "markdownify>=0.13",
+    "pdfplumber>=0.11",
+    "requests>=2.32",
+    "curl_cffi>=0.7",
+    "pytest>=8.0",
+    "pypdfium2>=5",
+    # ragas 0.3.x 与 langchain 1.x 不兼容（ragas 引用 langchain_community.chat_models.vertexai，
+    # community 0.4 已删）；上界防未来小版本再破 runner 的行对齐假设
+    "ragas>=0.3.1,<0.4",
+    "langchain-core<1",
+    "langchain-openai<1",
+    "langchain<1",
+    "langchain-community<0.4",
+    "langfuse>=4.15.1",
+    "netmiko>=4.7.0",
+    "ncclient>=0.7.1",
+    # langgraph 1.2.x 要求 langchain-core>=1.4.7，与上面 ragas 0.3.x 兼容线
+    # （langchain-core<1）冲突；1.0.x/1.1.x 接受 langchain-core>=0.1，实测
+    # langgraph 1.0.1 + langchain-core 0.3.86 导入正常。上界防解析漂移
+    "langgraph>=1.0.1,<1.2",
+    "fastmcp>=4.0.3",
+    "fastapi>=0.141.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/netrag"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["milvus: needs local milvus standalone", "gpu: needs local GPU and downloaded models", "lab: needs containerlab topology deployed via `make lab-up`"]

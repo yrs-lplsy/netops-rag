@@ -1,0 +1,50 @@
+# netops lab 设备清单（与 netops.clab.yml / Makefile lab-up 部署结果对应）
+#
+# 说明：
+#   - host 均为 127.0.0.1，port 为宿主机固定映射端口（clab inspect 亦可核对）
+#   - netmiko_device_type：可直接传给 netmiko.ConnectHandler 的驱动名。
+#     netmiko 4.x 没有 frr 驱动；FRR 节点 root 登录即 vtysh CLI（prompt `name#`），
+#     用 linux 驱动（prompt 识别 [$#]）即可正常收发 CLI 命令 —— 勿传 "frr"。
+#   - nc1 为 NETCONF over SSH（ncclient 直连，非 netmiko），标 kind: netconf。
+
+groups:
+  frr:
+    netmiko_device_type: linux
+    username: root
+    password: root
+  netconf:
+    kind: netconf
+    username: root
+    password: netconf
+
+nodes:
+  core1:
+    host: 127.0.0.1
+    port: 22022
+    group: frr
+    netmiko_device_type: linux
+    role: core
+  core2:
+    host: 127.0.0.1
+    port: 22122
+    group: frr
+    netmiko_device_type: linux
+    role: core
+  acc1:
+    host: 127.0.0.1
+    port: 22023
+    group: frr
+    netmiko_device_type: linux
+    role: access
+  acc2:
+    host: 127.0.0.1
+    port: 22024
+    group: frr
+    netmiko_device_type: linux
+    role: access
+  nc1:
+    host: 127.0.0.1
+    port: 21830 # 容器内 830（NETCONF over SSH）
+    group: netconf
+    kind: netconf
+    role: manager

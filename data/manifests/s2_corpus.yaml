@@ -1,0 +1,43 @@
+docs:
+  - doc_id: cisco-c9300-17.9-vlan
+    vendor: cisco
+    model: Catalyst 9300
+    sw_version: "17.9"
+    title: "Catalyst 9300 VLAN 配置指南 17-9：Configuring VLANs"
+    kind: html
+    source_url: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-9/configuration_guide/vlan/b_179_vlan_9300_cg/configuring_vlans.html
+  - doc_id: cisco-c9300-17.9-ospf
+    vendor: cisco
+    model: Catalyst 9300
+    sw_version: "17.9"
+    title: "Catalyst 9300 IP 路由配置指南 17-9：Configuring OSPF"
+    kind: html
+    source_url: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-9/configuration_guide/rtng/b_179_rtng_9300_cg/configuring_ospf.html
+  - doc_id: cisco-c9300-17.9-stp
+    vendor: cisco
+    model: Catalyst 9300
+    sw_version: "17.9"
+    title: "Catalyst 9300 Layer 2 配置指南 17-9：Configuring Spanning Tree Protocol"
+    kind: html
+    source_url: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-9/configuration_guide/lyr2/b_179_lyr2_9300_cg/configuring_spanning_tree_protocol.html
+  - doc_id: cisco-c9300-17.7-vlan
+    vendor: cisco
+    model: Catalyst 9300
+    sw_version: "17.7"
+    title: "Catalyst 9300 VLAN 配置指南 17-7：Configuring VLANs"
+    kind: html
+    source_url: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-7/configuration_guide/vlan/b_177_vlan_9300_cg/configuring_vlans.html
+  - doc_id: huawei-s5735-vlan
+    vendor: huawei
+    model: S5735
+    sw_version: "V200R022"
+    title: "华为 S5735 配置指南-VLAN（V200R022）"
+    kind: pdf
+    source_path: data/raw/huawei-s5735-vlan.pdf   # 官网支持中心下载后放此路径
+  - doc_id: h3c-s5560s-vlan
+    vendor: h3c
+    model: S5560S-EI
+    sw_version: "R63xx"
+    title: "H3C S5560S-EI 配置指导-VLAN"
+    kind: pdf
+    source_path: data/raw/h3c-s5560s-vlan.pdf

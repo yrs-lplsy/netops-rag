@@ -1,0 +1,1913 @@
+# pdf_v1 语料白名单：v1 入库范围见 scripts/gen_pdf_manifest.py 头注释；
+# 由脚本扫描生成（2026-09-06），勿手工编辑；data/pdf/ 本体不入 git。
+version: pdf_v1
+total_docs: 238
+docs:
+- doc_id: hw-v600r025c00-alarm-00-1
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 00-1 扉页
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/00-1 扉页.pdf
+- doc_id: hw-v600r025c00-alarm-00-2
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 00-2 目录
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/00-2 目录.pdf
+- doc_id: hw-v600r025c00-alarm-01-01
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-01 前言
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-01 前言.pdf
+- doc_id: hw-v600r025c00-alarm-01-02
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-02 Trap简介
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-02 Trap简介.pdf
+- doc_id: hw-v600r025c00-alarm-01-03
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-03 AAA告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-03 AAA告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-04
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-04 AM告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-04 AM告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-05
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-05 AM6告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-05 AM6告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-06
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-06 ARP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-06 ARP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-07
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-07 ASMNG告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-07 ASMNG告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-08
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-08 BFD告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-08 BFD告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-09
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-09 BGP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-09 BGP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-10
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-10 CFG告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-10 CFG告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-100
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-100 VFS告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-100 VFS告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-101
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-101 VRRP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-101 VRRP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-102
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-102 VSTM告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-102 VSTM告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-103
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-103 VTY告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-103 VTY告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-104
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-104 WEB告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-104 WEB告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-105
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-105 WLAN告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-105 WLAN告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-11
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-11 CFGMGR告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-11 CFGMGR告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-12
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-12 CM告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-12 CM告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-13
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-13 CONFIGURATION告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-13 CONFIGURATION告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-14
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-14 CPUDEFEND告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-14 CPUDEFEND告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-15
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-15 DEVM告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-15 DEVM告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-16
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-16 DHCP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-16 DHCP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-17
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-17 DLDP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-17 DLDP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-18
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-18 DRIVER告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-18 DRIVER告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-19
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-19 EAP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-19 EAP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-20
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-20 EFM告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-20 EFM告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-21
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-21 EOAM-1AG告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-21 EOAM-1AG告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-22
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-22 EOAM-Y1731告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-22 EOAM-Y1731告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-23
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-23 ERPS告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-23 ERPS告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-24
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-24 ERROR-DOWN告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-24 ERROR-DOWN告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-25
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-25 EVPN告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-25 EVPN告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-26
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-26 EWM告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-26 EWM告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-27
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-27 FEI告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-27 FEI告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-28
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-28 FM告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-28 FM告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-29
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-29 FTP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-29 FTP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-30
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-30 FTPS告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-30 FTPS告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-31
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-31 FWD告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-31 FWD告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-32
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-32 FWM-ETH告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-32 FWM-ETH告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-33
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-33 FWM-FRAME告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-33 FWM-FRAME告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-34
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-34 FWM-SLICE告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-34 FWM-SLICE告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-35
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-35 FWM_VXLAN告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-35 FWM_VXLAN告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-36
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-36 GMDB告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-36 GMDB告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-37
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-37 HAF告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-37 HAF告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-38
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-38 HIPS告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-38 HIPS告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-39
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-39 HSR告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-39 HSR告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-40
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-40 IFNET告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-40 IFNET告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-41
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-41 IGMP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-41 IGMP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-42
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-42 INDUSTRYACCESS告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-42 INDUSTRYACCESS告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-43
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-43 INFO告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-43 INFO告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-44
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-44 IPV6告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-44 IPV6告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-45
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-45 ISIS告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-45 ISIS告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-46
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-46 L2-MULTICAST告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-46 L2-MULTICAST告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-47
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-47 L2VPN告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-47 L2VPN告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-48
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-48 L3VPN告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-48 L3VPN告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-49
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-49 LACP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-49 LACP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-50
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-50 LBDT告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-50 LBDT告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-51
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-51 LCS告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-51 LCS告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-52
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-52 LDP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-52 LDP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-53
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-53 LLDP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-53 LLDP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-54
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-54 M-LAG告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-54 M-LAG告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-55
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-55 MACSEC告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-55 MACSEC告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-56
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-56 MPLS-TE告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-56 MPLS-TE告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-57
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-57 MPLS_LSPM告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-57 MPLS_LSPM告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-58
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-58 MPLS_RSVP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-58 MPLS_RSVP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-59
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-59 MQC告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-59 MQC告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-60
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-60 MSDP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-60 MSDP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-61
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-61 MSTP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-61 MSTP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-62
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-62 ND告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-62 ND告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-63
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-63 NETCONF告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-63 NETCONF告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-64
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-64 NETCONFC告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-64 NETCONFC告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-65
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-65 NQA告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-65 NQA告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-66
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-66 NTP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-66 NTP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-67
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-67 NVO3告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-67 NVO3告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-68
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-68 OSPF告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-68 OSPF告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-69
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-69 OSPFV3告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-69 OSPFV3告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-70
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-70 PATCH告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-70 PATCH告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-71
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-71 PIM告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-71 PIM告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-72
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-72 PIM-STD告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-72 PIM-STD告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-73
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-73 PKGM告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-73 PKGM告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-74
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-74 PKI告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-74 PKI告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-75
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-75 POE告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-75 POE告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-76
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-76 QOS告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-76 QOS告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-77
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-77 RM告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-77 RM告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-78
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-78 RMON告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-78 RMON告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-79
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-79 RUMNG告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-79 RUMNG告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-80
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-80 SEGR告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-80 SEGR告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-81
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-81 SEM告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-81 SEM告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-82
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-82 SMLKTRAP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-82 SMLKTRAP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-83
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-83 SNMP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-83 SNMP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-84
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-84 SSH告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-84 SSH告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-85
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-85 SSL告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-85 SSL告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-86
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-86 STACK告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-86 STACK告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-87
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-87 SUM告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-87 SUM告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-88
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-88 SYSCLOCK告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-88 SYSCLOCK告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-89
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-89 SYSDIAG告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-89 SYSDIAG告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-90
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-90 SYSTEM告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-90 SYSTEM告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-91
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-91 TCP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-91 TCP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-92
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-92 TELNET告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-92 TELNET告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-93
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-93 TRUNK告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-93 TRUNK告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-94
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-94 TRUSTEM告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-94 TRUSTEM告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-95
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-95 TTY告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-95 TTY告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-96
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-96 USA告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-96 USA告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-97
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-97 VBST告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-97 VBST告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-98
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-98 VCMP告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-98 VCMP告警.pdf
+- doc_id: hw-v600r025c00-alarm-01-99
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 告警处理
+  title: S1700, S5700, S6700 V600R025C00 告警处理 01-99 VCMU告警
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 告警处理(pdf)/01-99 VCMU告警.pdf
+- doc_id: hw-v600r025c00-ip-route-00-1
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R025C00 配置指南-IP路由 00-1 扉页
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-IP路由(pdf)/00-1 扉页.pdf
+- doc_id: hw-v600r025c00-ip-route-00-2
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R025C00 配置指南-IP路由 00-2 目录
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-IP路由(pdf)/00-2 目录.pdf
+- doc_id: hw-v600r025c00-ip-route-01-01
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R025C00 配置指南-IP路由 01-01 前言
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-IP路由(pdf)/01-01 前言.pdf
+- doc_id: hw-v600r025c00-ip-route-01-02
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R025C00 配置指南-IP路由 01-02 路由管理配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-IP路由(pdf)/01-02 路由管理配置.pdf
+- doc_id: hw-v600r025c00-ip-route-01-03
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R025C00 配置指南-IP路由 01-03 IPv4静态路由配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-IP路由(pdf)/01-03 IPv4静态路由配置.pdf
+- doc_id: hw-v600r025c00-ip-route-01-04
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R025C00 配置指南-IP路由 01-04 IPv6静态路由配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-IP路由(pdf)/01-04 IPv6静态路由配置.pdf
+- doc_id: hw-v600r025c00-ip-route-01-05
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R025C00 配置指南-IP路由 01-05 OSPF配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-IP路由(pdf)/01-05 OSPF配置.pdf
+- doc_id: hw-v600r025c00-ip-route-01-06
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R025C00 配置指南-IP路由 01-06 OSPFv3配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-IP路由(pdf)/01-06 OSPFv3配置.pdf
+- doc_id: hw-v600r025c00-ip-route-01-07
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R025C00 配置指南-IP路由 01-07 BGP配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-IP路由(pdf)/01-07 BGP配置.pdf
+- doc_id: hw-v600r025c00-ip-route-01-08
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R025C00 配置指南-IP路由 01-08 BGP4+配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-IP路由(pdf)/01-08 BGP4+配置.pdf
+- doc_id: hw-v600r025c00-ip-route-01-09
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R025C00 配置指南-IP路由 01-09 IS-IS配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-IP路由(pdf)/01-09 IS-IS配置.pdf
+- doc_id: hw-v600r025c00-ip-route-01-10
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R025C00 配置指南-IP路由 01-10 RIP配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-IP路由(pdf)/01-10 RIP配置.pdf
+- doc_id: hw-v600r025c00-ip-route-01-11
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R025C00 配置指南-IP路由 01-11 RIPng配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-IP路由(pdf)/01-11 RIPng配置.pdf
+- doc_id: hw-v600r025c00-ip-route-01-12
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R025C00 配置指南-IP路由 01-12 路由策略配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-IP路由(pdf)/01-12 路由策略配置.pdf
+- doc_id: hw-v600r025c00-eth-switch-00-1
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R025C00 配置指南-以太网交换 00-1 扉页
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-以太网交换(pdf)/00-1 扉页.pdf
+- doc_id: hw-v600r025c00-eth-switch-00-2
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R025C00 配置指南-以太网交换 00-2 目录
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-以太网交换(pdf)/00-2 目录.pdf
+- doc_id: hw-v600r025c00-eth-switch-01-01
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R025C00 配置指南-以太网交换 01-01 前言
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-以太网交换(pdf)/01-01 前言.pdf
+- doc_id: hw-v600r025c00-eth-switch-01-02
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R025C00 配置指南-以太网交换 01-02 MAC配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-以太网交换(pdf)/01-02 MAC配置.pdf
+- doc_id: hw-v600r025c00-eth-switch-01-03
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R025C00 配置指南-以太网交换 01-03 Eth-Trunk配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-以太网交换(pdf)/01-03 Eth-Trunk配置.pdf
+- doc_id: hw-v600r025c00-eth-switch-01-04
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R025C00 配置指南-以太网交换 01-04 VLAN配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-以太网交换(pdf)/01-04 VLAN配置.pdf
+- doc_id: hw-v600r025c00-eth-switch-01-05
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R025C00 配置指南-以太网交换 01-05 GVRP配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-以太网交换(pdf)/01-05 GVRP配置.pdf
+- doc_id: hw-v600r025c00-eth-switch-01-06
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R025C00 配置指南-以太网交换 01-06 VCMP配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-以太网交换(pdf)/01-06 VCMP配置.pdf
+- doc_id: hw-v600r025c00-eth-switch-01-07
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R025C00 配置指南-以太网交换 01-07 STP RSTP MSTP配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-以太网交换(pdf)/01-07 STP RSTP
+    MSTP配置.pdf
+- doc_id: hw-v600r025c00-eth-switch-01-08
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R025C00 配置指南-以太网交换 01-08 VBST配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-以太网交换(pdf)/01-08 VBST配置.pdf
+- doc_id: hw-v600r025c00-eth-switch-01-09
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R025C00 配置指南-以太网交换 01-09 SEP配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-以太网交换(pdf)/01-09 SEP配置.pdf
+- doc_id: hw-v600r025c00-eth-switch-01-10
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R025C00 配置指南-以太网交换 01-10 ERPS配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-以太网交换(pdf)/01-10 ERPS配置.pdf
+- doc_id: hw-v600r025c00-eth-switch-01-11
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R025C00 配置指南-以太网交换 01-11 二层协议透明传输配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-以太网交换(pdf)/01-11 二层协议透明传输配置.pdf
+- doc_id: hw-v600r025c00-eth-switch-01-12
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R025C00 配置指南-以太网交换 01-12 Loopback Detection配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-以太网交换(pdf)/01-12 Loopback
+    Detection配置.pdf
+- doc_id: hw-v600r025c00-security-00-1
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 00-1 扉页
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/00-1 扉页.pdf
+- doc_id: hw-v600r025c00-security-00-2
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 00-2 目录
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/00-2 目录.pdf
+- doc_id: hw-v600r025c00-security-01-01
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-01 前言
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-01 前言.pdf
+- doc_id: hw-v600r025c00-security-01-02
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-02 安全综述
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-02 安全综述.pdf
+- doc_id: hw-v600r025c00-security-01-03
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-03 本机防攻击配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-03 本机防攻击配置.pdf
+- doc_id: hw-v600r025c00-security-01-04
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-04 风暴抑制配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-04 风暴抑制配置.pdf
+- doc_id: hw-v600r025c00-security-01-05
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-05 IPSG配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-05 IPSG配置.pdf
+- doc_id: hw-v600r025c00-security-01-06
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-06 端口安全配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-06 端口安全配置.pdf
+- doc_id: hw-v600r025c00-security-01-07
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-07 URPF配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-07 URPF配置.pdf
+- doc_id: hw-v600r025c00-security-01-08
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-08 MACsec配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-08 MACsec配置.pdf
+- doc_id: hw-v600r025c00-security-01-09
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-09 业务和管理隔离配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-09 业务和管理隔离配置.pdf
+- doc_id: hw-v600r025c00-security-01-10
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-10 PKI配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-10 PKI配置.pdf
+- doc_id: hw-v600r025c00-security-01-11
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-11 PPPoE+配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-11 PPPoE+配置.pdf
+- doc_id: hw-v600r025c00-security-01-12
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-12 SSL配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-12 SSL配置.pdf
+- doc_id: hw-v600r025c00-security-01-13
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-13 SSH配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-13 SSH配置.pdf
+- doc_id: hw-v600r025c00-security-01-14
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-14 HTTPS配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-14 HTTPS配置.pdf
+- doc_id: hw-v600r025c00-security-01-15
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-15 Keychain配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-15 Keychain配置.pdf
+- doc_id: hw-v600r025c00-security-01-16
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-16 DIM配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-16 DIM配置.pdf
+- doc_id: hw-v600r025c00-security-01-17
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-17 远程证明配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-17 远程证明配置.pdf
+- doc_id: hw-v600r025c00-security-01-18
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-18 HIPS配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-18 HIPS配置.pdf
+- doc_id: hw-v600r025c00-security-01-19
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-19 FIPS配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-19 FIPS配置.pdf
+- doc_id: hw-v600r025c00-security-01-20
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-20 GTSM配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-20 GTSM配置.pdf
+- doc_id: hw-v600r025c00-security-01-21
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-21 安全风险查询配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-21 安全风险查询配置.pdf
+- doc_id: hw-v600r025c00-security-01-22
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-22 弱密码字典维护配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-22 弱密码字典维护配置.pdf
+- doc_id: hw-v600r025c00-security-01-23
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-23 二层流量限制配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-23 二层流量限制配置.pdf
+- doc_id: hw-v600r025c00-security-01-24
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R025C00 配置指南-安全 01-24 可信系统配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-安全(pdf)/01-24 可信系统配置.pdf
+- doc_id: hw-v600r025c00-interface-00-1
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-接口管理
+  title: S1700, S5700, S6700 V600R025C00 配置指南-接口管理 00-1 扉页
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-接口管理(pdf)/00-1 扉页.pdf
+- doc_id: hw-v600r025c00-interface-00-2
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-接口管理
+  title: S1700, S5700, S6700 V600R025C00 配置指南-接口管理 00-2 目录
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-接口管理(pdf)/00-2 目录.pdf
+- doc_id: hw-v600r025c00-interface-01-01
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-接口管理
+  title: S1700, S5700, S6700 V600R025C00 配置指南-接口管理 01-01 前言
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-接口管理(pdf)/01-01 前言.pdf
+- doc_id: hw-v600r025c00-interface-01-02
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-接口管理
+  title: S1700, S5700, S6700 V600R025C00 配置指南-接口管理 01-02 接口基础配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-接口管理(pdf)/01-02 接口基础配置.pdf
+- doc_id: hw-v600r025c00-interface-01-03
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-接口管理
+  title: S1700, S5700, S6700 V600R025C00 配置指南-接口管理 01-03 逻辑接口配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-接口管理(pdf)/01-03 逻辑接口配置.pdf
+- doc_id: hw-v600r025c00-interface-01-04
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-接口管理
+  title: S1700, S5700, S6700 V600R025C00 配置指南-接口管理 01-04 以太网接口配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-接口管理(pdf)/01-04 以太网接口配置.pdf
+- doc_id: hw-v600r025c00-interface-01-05
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-接口管理
+  title: S1700, S5700, S6700 V600R025C00 配置指南-接口管理 01-05 端口隔离配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-接口管理(pdf)/01-05 端口隔离配置.pdf
+- doc_id: hw-v600r025c00-interface-01-06
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R025C00
+  volume: 配置指南-接口管理
+  title: S1700, S5700, S6700 V600R025C00 配置指南-接口管理 01-06 串口透传配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R025C00/S1700, S5700, S6700 V600R025C00 配置指南-接口管理(pdf)/01-06 串口透传配置.pdf
+- doc_id: hw-v600-case-00-1
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600
+  volume: 典型配置案例集
+  title: S1700, S5700, S6700系列交换机 典型配置案例集（V600版本） 00-1 扉页
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700（V600版本）(pdf)/S1700, S5700, S6700系列交换机 典型配置案例集（V600版本）(pdf)/00-1 扉页.pdf
+- doc_id: hw-v600-case-00-2
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600
+  volume: 典型配置案例集
+  title: S1700, S5700, S6700系列交换机 典型配置案例集（V600版本） 00-2 目录
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700（V600版本）(pdf)/S1700, S5700, S6700系列交换机 典型配置案例集（V600版本）(pdf)/00-2 目录.pdf
+- doc_id: hw-v600-case-01-01
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600
+  volume: 典型配置案例集
+  title: S1700, S5700, S6700系列交换机 典型配置案例集（V600版本） 01-01 前言
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700（V600版本）(pdf)/S1700, S5700, S6700系列交换机 典型配置案例集（V600版本）(pdf)/01-01 前言.pdf
+- doc_id: hw-v600-case-01-02
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600
+  volume: 典型配置案例集
+  title: S1700, S5700, S6700系列交换机 典型配置案例集（V600版本） 01-02 园区综合配置案例
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700（V600版本）(pdf)/S1700, S5700, S6700系列交换机 典型配置案例集（V600版本）(pdf)/01-02 园区综合配置案例.pdf
+- doc_id: hw-v600-case-01-03
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600
+  volume: 典型配置案例集
+  title: S1700, S5700, S6700系列交换机 典型配置案例集（V600版本） 01-03 交换机特性配置案例
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700（V600版本）(pdf)/S1700, S5700, S6700系列交换机 典型配置案例集（V600版本）(pdf)/01-03 交换机特性配置案例.pdf
+- doc_id: hw-v600r024c10-ip-route-00-1
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R024C10 配置指南-IP路由 00-1 扉页
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-IP路由(pdf)/00-1 扉页.pdf
+- doc_id: hw-v600r024c10-ip-route-00-2
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R024C10 配置指南-IP路由 00-2 目录
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-IP路由(pdf)/00-2 目录.pdf
+- doc_id: hw-v600r024c10-ip-route-01-01
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R024C10 配置指南-IP路由 01-01 前言
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-IP路由(pdf)/01-01 前言.pdf
+- doc_id: hw-v600r024c10-ip-route-01-02
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R024C10 配置指南-IP路由 01-02 路由管理配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-IP路由(pdf)/01-02 路由管理配置.pdf
+- doc_id: hw-v600r024c10-ip-route-01-03
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R024C10 配置指南-IP路由 01-03 IPv4静态路由配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-IP路由(pdf)/01-03 IPv4静态路由配置.pdf
+- doc_id: hw-v600r024c10-ip-route-01-04
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R024C10 配置指南-IP路由 01-04 IPv6静态路由配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-IP路由(pdf)/01-04 IPv6静态路由配置.pdf
+- doc_id: hw-v600r024c10-ip-route-01-05
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R024C10 配置指南-IP路由 01-05 OSPF配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-IP路由(pdf)/01-05 OSPF配置.pdf
+- doc_id: hw-v600r024c10-ip-route-01-06
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R024C10 配置指南-IP路由 01-06 OSPFv3配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-IP路由(pdf)/01-06 OSPFv3配置.pdf
+- doc_id: hw-v600r024c10-ip-route-01-07
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R024C10 配置指南-IP路由 01-07 BGP配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-IP路由(pdf)/01-07 BGP配置.pdf
+- doc_id: hw-v600r024c10-ip-route-01-08
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R024C10 配置指南-IP路由 01-08 BGP4+配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-IP路由(pdf)/01-08 BGP4+配置.pdf
+- doc_id: hw-v600r024c10-ip-route-01-09
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R024C10 配置指南-IP路由 01-09 IS-IS配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-IP路由(pdf)/01-09 IS-IS配置.pdf
+- doc_id: hw-v600r024c10-ip-route-01-10
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R024C10 配置指南-IP路由 01-10 RIP配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-IP路由(pdf)/01-10 RIP配置.pdf
+- doc_id: hw-v600r024c10-ip-route-01-11
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R024C10 配置指南-IP路由 01-11 RIPng配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-IP路由(pdf)/01-11 RIPng配置.pdf
+- doc_id: hw-v600r024c10-ip-route-01-12
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-IP路由
+  title: S1700, S5700, S6700 V600R024C10 配置指南-IP路由 01-12 路由策略配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-IP路由(pdf)/01-12 路由策略配置.pdf
+- doc_id: hw-v600r024c10-eth-switch-00-1
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R024C10 配置指南-以太网交换 00-1 扉页
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-以太网交换(pdf)/00-1 扉页.pdf
+- doc_id: hw-v600r024c10-eth-switch-00-2
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R024C10 配置指南-以太网交换 00-2 目录
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-以太网交换(pdf)/00-2 目录.pdf
+- doc_id: hw-v600r024c10-eth-switch-01-01
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R024C10 配置指南-以太网交换 01-01 前言
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-以太网交换(pdf)/01-01 前言.pdf
+- doc_id: hw-v600r024c10-eth-switch-01-02
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R024C10 配置指南-以太网交换 01-02 MAC配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-以太网交换(pdf)/01-02 MAC配置.pdf
+- doc_id: hw-v600r024c10-eth-switch-01-03
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R024C10 配置指南-以太网交换 01-03 Eth-Trunk配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-以太网交换(pdf)/01-03 Eth-Trunk配置.pdf
+- doc_id: hw-v600r024c10-eth-switch-01-04
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R024C10 配置指南-以太网交换 01-04 VLAN配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-以太网交换(pdf)/01-04 VLAN配置.pdf
+- doc_id: hw-v600r024c10-eth-switch-01-05
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R024C10 配置指南-以太网交换 01-05 GVRP配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-以太网交换(pdf)/01-05 GVRP配置.pdf
+- doc_id: hw-v600r024c10-eth-switch-01-06
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R024C10 配置指南-以太网交换 01-06 VCMP配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-以太网交换(pdf)/01-06 VCMP配置.pdf
+- doc_id: hw-v600r024c10-eth-switch-01-07
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R024C10 配置指南-以太网交换 01-07 STP RSTP MSTP配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-以太网交换(pdf)/01-07 STP RSTP
+    MSTP配置.pdf
+- doc_id: hw-v600r024c10-eth-switch-01-08
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R024C10 配置指南-以太网交换 01-08 VBST配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-以太网交换(pdf)/01-08 VBST配置.pdf
+- doc_id: hw-v600r024c10-eth-switch-01-09
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R024C10 配置指南-以太网交换 01-09 SEP配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-以太网交换(pdf)/01-09 SEP配置.pdf
+- doc_id: hw-v600r024c10-eth-switch-01-10
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R024C10 配置指南-以太网交换 01-10 ERPS配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-以太网交换(pdf)/01-10 ERPS配置.pdf
+- doc_id: hw-v600r024c10-eth-switch-01-11
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R024C10 配置指南-以太网交换 01-11 二层协议透明传输配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-以太网交换(pdf)/01-11 二层协议透明传输配置.pdf
+- doc_id: hw-v600r024c10-eth-switch-01-12
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-以太网交换
+  title: S1700, S5700, S6700 V600R024C10 配置指南-以太网交换 01-12 Loopback Detection配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-以太网交换(pdf)/01-12 Loopback
+    Detection配置.pdf
+- doc_id: hw-v600r024c10-security-00-1
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 00-1 扉页
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/00-1 扉页.pdf
+- doc_id: hw-v600r024c10-security-00-2
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 00-2 目录
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/00-2 目录.pdf
+- doc_id: hw-v600r024c10-security-01-01
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-01 前言
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-01 前言.pdf
+- doc_id: hw-v600r024c10-security-01-02
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-02 安全综述
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-02 安全综述.pdf
+- doc_id: hw-v600r024c10-security-01-03
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-03 本机防攻击配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-03 本机防攻击配置.pdf
+- doc_id: hw-v600r024c10-security-01-04
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-04 风暴抑制配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-04 风暴抑制配置.pdf
+- doc_id: hw-v600r024c10-security-01-05
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-05 IPSG配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-05 IPSG配置.pdf
+- doc_id: hw-v600r024c10-security-01-06
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-06 端口安全配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-06 端口安全配置.pdf
+- doc_id: hw-v600r024c10-security-01-07
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-07 URPF配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-07 URPF配置.pdf
+- doc_id: hw-v600r024c10-security-01-08
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-08 MACsec配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-08 MACsec配置.pdf
+- doc_id: hw-v600r024c10-security-01-09
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-09 业务和管理隔离配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-09 业务和管理隔离配置.pdf
+- doc_id: hw-v600r024c10-security-01-10
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-10 PKI配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-10 PKI配置.pdf
+- doc_id: hw-v600r024c10-security-01-11
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-11 PPPoE+配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-11 PPPoE+配置.pdf
+- doc_id: hw-v600r024c10-security-01-12
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-12 SSL配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-12 SSL配置.pdf
+- doc_id: hw-v600r024c10-security-01-13
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-13 SSH配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-13 SSH配置.pdf
+- doc_id: hw-v600r024c10-security-01-14
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-14 HTTPS配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-14 HTTPS配置.pdf
+- doc_id: hw-v600r024c10-security-01-15
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-15 Keychain配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-15 Keychain配置.pdf
+- doc_id: hw-v600r024c10-security-01-16
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-16 DIM配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-16 DIM配置.pdf
+- doc_id: hw-v600r024c10-security-01-17
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-17 远程证明配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-17 远程证明配置.pdf
+- doc_id: hw-v600r024c10-security-01-18
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-18 HIPS配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-18 HIPS配置.pdf
+- doc_id: hw-v600r024c10-security-01-19
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-19 FIPS配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-19 FIPS配置.pdf
+- doc_id: hw-v600r024c10-security-01-20
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-20 GTSM配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-20 GTSM配置.pdf
+- doc_id: hw-v600r024c10-security-01-21
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-21 安全风险查询配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-21 安全风险查询配置.pdf
+- doc_id: hw-v600r024c10-security-01-22
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-22 弱密码字典维护配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-22 弱密码字典维护配置.pdf
+- doc_id: hw-v600r024c10-security-01-23
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-23 二层流量限制配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-23 二层流量限制配置.pdf
+- doc_id: hw-v600r024c10-security-01-24
+  vendor: huawei
+  model: S1700, S5700, S6700
+  sw_version: V600R024C10
+  volume: 配置指南-安全
+  title: S1700, S5700, S6700 V600R024C10 配置指南-安全 01-24 可信系统配置
+  kind: pdf
+  source_path: data/pdf/Huawei/S1700, S5700, S6700 V600R024C10/S1700, S5700, S6700 V600R024C10 配置指南-安全(pdf)/01-24 可信系统配置.pdf
+- doc_id: cisco-c9300-17.9-ip-routing-cg
+  vendor: cisco
+  model: Catalyst 9300
+  sw_version: '17.9'
+  volume: IP Routing Configuration Guide
+  title: Catalyst 9300 IP Routing Configuration Guide, Cisco IOS XE Cupertino 17.9.x
+  kind: pdf
+  source_path: data/pdf/Cisco/Catalyst 9300/IP Routing Configuration Guide, Cisco IOS XE Cupertino 17.9.x (Catalyst 9300 Switches).pdf
+- doc_id: cisco-c9300-17.9-layer2-cg
+  vendor: cisco
+  model: Catalyst 9300
+  sw_version: '17.9'
+  volume: Layer 2 Configuration Guide
+  title: Catalyst 9300 Layer 2 Configuration Guide, Cisco IOS XE Cupertino 17.9.x
+  kind: pdf
+  source_path: data/pdf/Cisco/Catalyst 9300/Layer 2 Configuration Guide Cisco IOS XE Cupertino 17.9.x (Catalyst 9300).pdf
+- doc_id: cisco-c9300-17.9-security-cg
+  vendor: cisco
+  model: Catalyst 9300
+  sw_version: '17.9'
+  volume: Security Configuration Guide
+  title: Catalyst 9300 Security Configuration Guide, Cisco IOS XE Cupertino 17.9.x
+  kind: pdf
+  source_path: data/pdf/Cisco/Catalyst 9300/Security Configuration Guide, Cisco IOS XE Cupertino 17.9.x (Catalyst 9300 Switches).pdf
+- doc_id: cisco-c9300-17.9-vlan-cg
+  vendor: cisco
+  model: Catalyst 9300
+  sw_version: '17.9'
+  volume: VLAN Configuration Guide
+  title: Catalyst 9300 VLAN Configuration Guide, Cisco IOS XE Cupertino 17.9.x
+  kind: pdf
+  source_path: data/pdf/Cisco/Catalyst 9300/VLAN Configuration Guide Cisco IOS XE Cupertino 17.9.x (Catalyst 9300).pdf
+- doc_id: h3c-r1110-l2sw-cfg
+  vendor: h3c
+  model: R1110
+  sw_version: R1110
+  volume: 二层技术-以太网交换配置指导
+  title: H3C R1110 二层技术-以太网交换配置指导
+  kind: pdf
+  source_path: data/pdf/H3C/R1110/配置指导/03-二层技术-以太网交换配置指导-整本手册.pdf
+- doc_id: h3c-r1110-iproute-cfg
+  vendor: h3c
+  model: R1110
+  sw_version: R1110
+  volume: 三层技术-IP路由配置指导
+  title: H3C R1110 三层技术-IP路由配置指导
+  kind: pdf
+  source_path: data/pdf/H3C/R1110/配置指导/05-三层技术-IP路由配置指导-整本手册.pdf
+- doc_id: h3c-r1110-security-cfg
+  vendor: h3c
+  model: R1110
+  sw_version: R1110
+  volume: 安全配置指导
+  title: H3C R1110 安全配置指导
+  kind: pdf
+  source_path: data/pdf/H3C/R1110/配置指导/09-安全配置指导-整本手册.pdf
+- doc_id: h3c-r1110-l2sw-cmd
+  vendor: h3c
+  model: R1110
+  sw_version: R1110
+  volume: 二层技术-以太网交换命令参考
+  title: H3C R1110 二层技术-以太网交换命令参考
+  kind: pdf
+  source_path: data/pdf/H3C/R1110/命令参考/03-二层技术-以太网交换命令参考-整本手册.pdf
+- doc_id: h3c-r1110-iproute-cmd
+  vendor: h3c
+  model: R1110
+  sw_version: R1110
+  volume: 三层技术-IP路由命令参考
+  title: H3C R1110 三层技术-IP路由命令参考
+  kind: pdf
+  source_path: data/pdf/H3C/R1110/命令参考/05-三层技术-IP路由命令参考-整本手册.pdf
+- doc_id: h3c-r1110-security-cmd
+  vendor: h3c
+  model: R1110
+  sw_version: R1110
+  volume: 安全命令参考
+  title: H3C R1110 安全命令参考
+  kind: pdf
+  source_path: data/pdf/H3C/R1110/命令参考/09-安全命令参考-整本手册.pdf

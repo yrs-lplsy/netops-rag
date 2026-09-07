@@ -1,0 +1,22 @@
+docs:
+  - doc_id: cisco-c9300-17.9-vlan
+    vendor: cisco
+    model: Catalyst 9300
+    sw_version: "17.9"
+    title: "Catalyst 9300 VLAN 配置指南 17-9：Configuring VLANs"
+    kind: html
+    source_url: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-9/configuration_guide/vlan/b_179_vlan_9300_cg/configuring_vlans.html
+  - doc_id: cisco-c9300-17.9-ospf
+    vendor: cisco
+    model: Catalyst 9300
+    sw_version: "17.9"
+    title: "Catalyst 9300 IP 路由配置指南 17-9：Configuring OSPF"
+    kind: html
+    source_url: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-9/configuration_guide/rtng/b_179_rtng_9300_cg/configuring_ospf.html
+  - doc_id: cisco-c9300-17.9-stp
+    vendor: cisco
+    model: Catalyst 9300
+    sw_version: "17.9"
+    title: "Catalyst 9300 Layer 2 配置指南 17-9：Configuring Spanning Tree Protocol"
+    kind: html
+    source_url: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-9/configuration_guide/lyr2/b_179_lyr2_9300_cg/configuring_spanning_tree_protocol.html

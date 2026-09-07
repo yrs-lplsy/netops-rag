@@ -1,0 +1,99 @@
+# netops 仿真拓扑（containerlab）
+#
+# 5 节点小fabric：core1/core2（汇聚核心）+ acc1/acc2（接入）+ nc1（NETCONF 网管）。
+# 链路：core1-core2, core1-acc1, core1-acc2, core2-acc1, core2-acc2（全二层/三层互联）。
+#
+# 镜像来源（本机 docker.io/ghcr.io 直连不可用，见 task-11 报告）：
+#   - FRR：官方计划用 ghcr.io/srl-labs/linuxrouter，各镜像站均无法拉取
+#     （daocloud 403 / nju、dockerproxy、1ms path-style 均 not found）。
+#     改用 quay.io（可直连）官方 frrouting/frr:10.4.3 + 薄层补装 openssh-server，
+#     构建： make lab-build  ->  netops/frr-ssh:10.4.3（root/root，见 docker/frr-ssh.Dockerfile）
+#   - NETCONF：docker.io/sysrepo/netopeer2:latest 经 docker.1ms.run 拉取后 retag，
+#     由 make lab-pull 自动完成（幂等，lab-up 亦依赖之）：
+#     docker pull docker.1ms.run/sysrepo/netopeer2:latest
+#     docker tag  docker.1ms.run/sysrepo/netopeer2:latest sysrepo/netopeer2:latest
+#     （节点启动命令会先 chpasswd root/netconf 并执行 merge_hostkey/merge_config，
+#      故 NETCONF 登录凭据为 root/netconf，监听 830）
+#
+# SSH 端口固定映射（写入 inventory.yaml；clab inspect 亦可见）：
+#   core1 22022  core2 22122  acc1 22023  acc2 22024  nc1(NETCONF) 21830
+name: netops
+
+# 默认 mgmt 网段 172.20.20.0/24 与本机既有 docker 网络（cook-rag-2_default 等
+# 172.20.0.0/16）冲突，显式指定空闲网段；网桥名默认 clab
+mgmt:
+  ipv4-subnet: 10.20.30.0/24
+
+topology:
+  nodes:
+    core1:
+      kind: linux
+      image: netops/frr-ssh:10.4.3
+      binds:
+        - configs/core1/frr.conf:/etc/frr/frr.conf
+        - configs/daemons:/etc/frr/daemons
+      env:
+        NETOPS_VLANS: "eth2:100" # eth2=core1-acc1 链路，dot1q VLAN100 示例
+      ports:
+        - "22022:22"
+      cpu: 1 # 资源限制（clab 0.79 为节点级 cpu/memory 字段）
+      memory: 384M
+
+    core2:
+      kind: linux
+      image: netops/frr-ssh:10.4.3
+      binds:
+        - configs/core2/frr.conf:/etc/frr/frr.conf
+        - configs/daemons:/etc/frr/daemons
+      ports:
+        - "22122:22"
+      cpu: 1 # 资源限制（clab 0.79 为节点级 cpu/memory 字段）
+      memory: 384M
+
+    acc1:
+      kind: linux
+      image: netops/frr-ssh:10.4.3
+      binds:
+        - configs/acc1/frr.conf:/etc/frr/frr.conf
+        - configs/daemons:/etc/frr/daemons
+      env:
+        NETOPS_VLANS: "eth1:100" # eth1=acc1-core1 链路，与 core1 侧对端
+      ports:
+        - "22023:22"
+      cpu: 1 # 资源限制（clab 0.79 为节点级 cpu/memory 字段）
+      memory: 384M
+
+    acc2:
+      kind: linux
+      image: netops/frr-ssh:10.4.3
+      binds:
+        - configs/acc2/frr.conf:/etc/frr/frr.conf
+        - configs/daemons:/etc/frr/daemons
+      ports:
+        - "22024:22"
+      cpu: 1 # 资源限制（clab 0.79 为节点级 cpu/memory 字段）
+      memory: 384M
+
+    nc1:
+      kind: linux
+      image: sysrepo/netopeer2:latest
+      # netopeer2-server 需以 -d 守护化（前台模式会立即退出）；
+      # 先设 root 口令，再执行官方首启脚本（生成 hostkey 与 NETCONF 监听/用户配置）
+      cmd: >
+        /bin/bash -c "echo 'root:netconf' | chpasswd &&
+        /usr/sbin/netopeer2-server -d &&
+        sleep 3 &&
+        /usr/share/netopeer2/scripts/merge_hostkey.sh &&
+        /usr/share/netopeer2/scripts/merge_config.sh &&
+        exec tail -f /dev/null"
+      ports:
+        - "21830:830"
+      cpu: 1
+      memory: 512M
+
+  links:
+    - endpoints: ["core1:eth1", "core2:eth1"] # 10.0.12.0/30
+    - endpoints: ["core1:eth2", "acc1:eth1"] # 10.0.101.0/30 (+VLAN100)
+    - endpoints: ["core1:eth3", "acc2:eth1"] # 10.0.102.0/30
+    - endpoints: ["core2:eth2", "acc1:eth2"] # 10.0.201.0/30
+    - endpoints: ["core2:eth3", "acc2:eth2"] # 10.0.202.0/30

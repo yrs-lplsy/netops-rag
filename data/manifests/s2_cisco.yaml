@@ -1,0 +1,31 @@
+# S2 实际语料清单：产出仓库内已提交 S2 证据的 4 篇思科 HTML 文档。
+# 全量目标清单见 s2_corpus.yaml（另含 2 篇需从厂商官网手动下载的华为/H3C PDF）。
+docs:
+  - doc_id: cisco-c9300-17.9-vlan
+    vendor: cisco
+    model: Catalyst 9300
+    sw_version: "17.9"
+    title: "Catalyst 9300 VLAN 配置指南 17-9：Configuring VLANs"
+    kind: html
+    source_url: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-9/configuration_guide/vlan/b_179_vlan_9300_cg/configuring_vlans.html
+  - doc_id: cisco-c9300-17.9-ospf
+    vendor: cisco
+    model: Catalyst 9300
+    sw_version: "17.9"
+    title: "Catalyst 9300 IP 路由配置指南 17-9：Configuring OSPF"
+    kind: html
+    source_url: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-9/configuration_guide/rtng/b_179_rtng_9300_cg/configuring_ospf.html
+  - doc_id: cisco-c9300-17.9-stp
+    vendor: cisco
+    model: Catalyst 9300
+    sw_version: "17.9"
+    title: "Catalyst 9300 Layer 2 配置指南 17-9：Configuring Spanning Tree Protocol"
+    kind: html
+    source_url: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-9/configuration_guide/lyr2/b_179_lyr2_9300_cg/configuring_spanning_tree_protocol.html
+  - doc_id: cisco-c9300-17.7-vlan
+    vendor: cisco
+    model: Catalyst 9300
+    sw_version: "17.7"
+    title: "Catalyst 9300 VLAN 配置指南 17-7：Configuring VLANs"
+    kind: html
+    source_url: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/17-7/configuration_guide/vlan/b_177_vlan_9300_cg/configuring_vlans.html

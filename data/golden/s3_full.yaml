@@ -1,0 +1,1627 @@
+- qid: hw-v600r025c00-eth-switch-01-03#c30#ver
+  question: 在华为 V600R025C00 版本文档中，配置Eth-Trunk自协商功能支持哪种模式的Eth-Trunk？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-eth-switch-01-03
+  expected_chunk_ids:
+  - hw-v600r025c00-eth-switch-01-03#c30
+  filters:
+    vendor: null
+    model: null
+    sw_version: V600R025C00
+- qid: hw-v600r025c00-eth-switch-01-04#c15#ver
+  question: 在华为 V600R025C00 版本文档中，当Host1发送ARP广播请求报文给Host2时，DeviceA的接口interface1会给报文添加VID为多少的Tag？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-eth-switch-01-04
+  expected_chunk_ids:
+  - hw-v600r025c00-eth-switch-01-04#c15
+  filters:
+    vendor: null
+    model: null
+    sw_version: V600R025C00
+- qid: hw-v600r025c00-eth-switch-01-07#c94#ver
+  question: 在华为 V600R025C00 版本文档中，配置接口路径开销计算方法为 dot1t 时，参数 cost 的取值范围是多少？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-eth-switch-01-07
+  expected_chunk_ids:
+  - hw-v600r025c00-eth-switch-01-07#c94
+  filters:
+    vendor: null
+    model: null
+    sw_version: V600R025C00
+- qid: hw-v600r025c00-eth-switch-01-10#c26#ver
+  question: 在华为 V600R025C00 版本文档中，当DeviceD上与DeviceE相连的端口故障恢复时，哪个设备的RPL owner端口将被阻塞？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-eth-switch-01-10
+  expected_chunk_ids:
+  - hw-v600r025c00-eth-switch-01-10#c26
+  filters:
+    vendor: null
+    model: null
+    sw_version: V600R025C00
+- qid: hw-v600r025c00-eth-switch-01-11#c57#ver
+  question: 在华为 V600R025C00 版本文档中，配置完成后，使用哪个命令可以在PE上查看透明传输的二层协议的组播目的MAC地址和Group MAC地址？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-eth-switch-01-11
+  expected_chunk_ids:
+  - hw-v600r025c00-eth-switch-01-11#c57
+  filters:
+    vendor: null
+    model: null
+    sw_version: V600R025C00
+- qid: hw-v600r025c00-ip-route-01-05#c84#ver
+  question: 在华为 V600R025C00 版本文档中，配置 OSPF 更新 LSA 的泛洪限制时，如果不恰当设置 `flooding-control`
+    命令的参数，可能会导致什么问题？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-ip-route-01-05
+  expected_chunk_ids:
+  - hw-v600r025c00-ip-route-01-05#c84
+  filters:
+    vendor: null
+    model: null
+    sw_version: V600R025C00
+- qid: hw-v600r025c00-ip-route-01-06#c125#ver
+  question: 在华为 V600R025C00 版本文档中，filter-policy import 命令的作用是什么？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-ip-route-01-06
+  expected_chunk_ids:
+  - hw-v600r025c00-ip-route-01-06#c125
+  filters:
+    vendor: null
+    model: null
+    sw_version: V600R025C00
+- qid: hw-v600r025c00-ip-route-01-07#c278#ver
+  question: 在华为 V600R025C00 版本文档中，哪些产品支持配置设备内存状态处于危险态时BGP丢弃从邻居新收到的路由？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-ip-route-01-07
+  expected_chunk_ids:
+  - hw-v600r025c00-ip-route-01-07#c278
+  filters:
+    vendor: null
+    model: null
+    sw_version: V600R025C00
+- qid: hw-v600r024c10-eth-switch-01-03#c55#ver
+  question: 在华为 V600R024C10 版本文档中，缺省情况下MPLS报文的负载分担方式是什么？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-eth-switch-01-03
+  expected_chunk_ids:
+  - hw-v600r024c10-eth-switch-01-03#c55
+  filters:
+    vendor: null
+    model: null
+    sw_version: V600R024C10
+- qid: hw-v600r024c10-eth-switch-01-04#c17#ver
+  question: 在华为 V600R024C10 版本文档中，当DeviceA的interface2接口接收到VID=2的报文时，因为接口的PVID是多少，所以直接透传该报文到DeviceB的interface2接口，不剥离报文的Tag？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-eth-switch-01-04
+  expected_chunk_ids:
+  - hw-v600r024c10-eth-switch-01-04#c17
+  filters:
+    vendor: null
+    model: null
+    sw_version: V600R024C10
+- qid: hw-v600r024c10-eth-switch-01-07#c60#ver
+  question: 在华为 V600R024C10 版本文档中，配置MSTP多实例时，随着实例个数的增加，协议报文的长度会如何变化？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-eth-switch-01-07
+  expected_chunk_ids:
+  - hw-v600r024c10-eth-switch-01-07#c60
+  filters:
+    vendor: null
+    model: null
+    sw_version: V600R024C10
+- qid: hw-v600r024c10-ip-route-01-05#c87#ver
+  question: 在华为 V600R024C10 版本文档中，配置OSPF更新LSA的泛洪限制时，如果不恰当设置哪个参数会直接影响泛洪速度，可能导致LSA不能及时同步，影响全网路由？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-ip-route-01-05
+  expected_chunk_ids:
+  - hw-v600r024c10-ip-route-01-05#c87
+  filters:
+    vendor: null
+    model: null
+    sw_version: V600R024C10
+- qid: hw-v600r024c10-ip-route-01-06#c137#ver
+  question: 在华为 V600R024C10 版本文档中，执行命令 `display ospfv3 [ process-id ]` 后，哪个字段显示了SPF计算的时间间隔智能定时器的值？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-ip-route-01-06
+  expected_chunk_ids:
+  - hw-v600r024c10-ip-route-01-06#c137
+  filters:
+    vendor: null
+    model: null
+    sw_version: V600R024C10
+- qid: hw-v600r024c10-ip-route-01-09#c71#ver
+  question: 在华为 V600R024C10 版本文档中，哪些系列的设备支持通过 `undo portswitch` 命令将接口从二层模式切换到三层模式？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-ip-route-01-09
+  expected_chunk_ids:
+  - hw-v600r024c10-ip-route-01-09#c71
+  filters:
+    vendor: null
+    model: null
+    sw_version: V600R024C10
+- qid: hw-v600r024c10-ip-route-01-12#c7#ver
+  question: 在华为 V600R024C10 版本文档中，为了实现DeviceA仅向DeviceB提供172.16.17.0/24、172.16.18.0/24和172.16.19.0/24这三个特定的Internet路由，可以使用哪种方法，并简述该方法的配置步骤？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-ip-route-01-12
+  expected_chunk_ids:
+  - hw-v600r024c10-ip-route-01-12#c7
+  filters:
+    vendor: null
+    model: null
+    sw_version: V600R024C10
+- qid: hw-v600r025c00-alarm-01-33#hw-v600r025c00-alarm-01-33#c10
+  question: LSW与协处理器相连的XFI端口down可能是什么原因导致的？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-33
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-33#c10
+  filters: null
+- qid: hw-v600r025c00-security-01-22#hw-v600r025c00-security-01-22#c1
+  question: 弱密码字典文件的最大大小是多少？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-security-01-22
+  expected_chunk_ids:
+  - hw-v600r025c00-security-01-22#c1
+  filters: null
+- qid: hw-v600r025c00-security-01-24#hw-v600r025c00-security-01-24#c3
+  question: 数字签名机制在设置下次启动大包、设置下次启动补丁、补丁加载等场景中如何保证软件包的合法性和完整性？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-security-01-24
+  expected_chunk_ids:
+  - hw-v600r025c00-security-01-24#c3
+  filters: null
+- qid: hw-v600r025c00-alarm-01-23#hw-v600r025c00-alarm-01-23#c1
+  question: hwErpsFwStateForwarding 参数表示ERPS端口状态变更为什么状态？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-23
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-23#c1
+  filters: null
+- qid: hw-v600r025c00-security-01-09#hw-v600r025c00-security-01-09#c1
+  question: 业务平面与管理平面的隔离实现原理中，禁止从哪个接口上送管理数据？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-security-01-09
+  expected_chunk_ids:
+  - hw-v600r025c00-security-01-09#c1
+  filters: null
+- qid: hw-v600r025c00-security-01-18#hw-v600r025c00-security-01-18#c15
+  question: 如何查看HIPS各检测模块的启用情况？可以在任意视图下执行什么命令？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-security-01-18
+  expected_chunk_ids:
+  - hw-v600r025c00-security-01-18#c15
+  filters: null
+- qid: hw-v600r025c00-security-01-20#hw-v600r025c00-security-01-20#c13
+  question: 对于未匹配GTSM策略的报文，默认处理动作是什么？如何配置其处理动作以选择丢弃？请参考哪一部分内容进行配置？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-security-01-20
+  expected_chunk_ids:
+  - hw-v600r025c00-security-01-20#c13
+  filters: null
+- qid: hw-v600r025c00-alarm-01-92#hw-v600r025c00-alarm-01-92#c1
+  question: 用户登录Telnet服务器失败的频率过高时，哪个命令可以用来清除登录失败记录？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-92
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-92#c1
+  filters: null
+- qid: hw-v600r025c00-alarm-01-39#hw-v600r025c00-alarm-01-39#c16
+  question: HSR redbox的节点表使用率低于多少时，告警会消除？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-39
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-39#c16
+  filters: null
+- qid: hw-v600r025c00-alarm-01-83#hw-v600r025c00-alarm-01-83#c10
+  question: 设备开启SNMP功能时热启动，对系统和业务是否有影响？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-83
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-83#c10
+  filters: null
+- qid: hw-v600r025c00-alarm-01-55#hw-v600r025c00-alarm-01-55#c15
+  question: 在处理对端无响应导致的心跳报文未收到的问题时，需要在所有视图下执行什么命令来检查两端设备的端口状态？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-55
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-55#c15
+  filters: null
+- qid: hw-v600r025c00-alarm-01-38#hw-v600r025c00-alarm-01-38#c14
+  question: 如果设备发生了异常shell行为，比如shell拷贝、shell文件属性修改、shell文件内容修改，应该采取什么处理步骤？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-38
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-38#c14
+  filters: null
+- qid: hw-v600r025c00-eth-switch-01-06#hw-v600r025c00-eth-switch-01-06#c10
+  question: 执行什么命令会清除已经保存的配置文件并导致vlan.dat文件被自动删除？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-eth-switch-01-06
+  expected_chunk_ids:
+  - hw-v600r025c00-eth-switch-01-06#c10
+  filters: null
+- qid: hw-v600r025c00-alarm-01-105#hw-v600r025c00-alarm-01-105#c1000
+  question: 哪些设备形态支持"The CA certificate is invalid."的告警？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-105
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-105#c1000
+  filters: null
+- qid: hw-v600r025c00-ip-route-01-08#hw-v600r025c00-ip-route-01-08#c100
+  question: 如何配置BGP4+路由在形成负载分担时不比较路由的AS-Path属性？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-ip-route-01-08
+  expected_chunk_ids:
+  - hw-v600r025c00-ip-route-01-08#c100
+  filters: null
+- qid: hw-v600r025c00-alarm-01-25#hw-v600r025c00-alarm-01-25#c1
+  question: 在指定EVPN实例中，由于发生了MAC地址频繁迁移，哪个命令或参数会触发MAC地址对应的路由被抑制的告警？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-25
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-25#c1
+  filters: null
+- qid: hw-v600r025c00-alarm-01-67#hw-v600r025c00-alarm-01-67#c15
+  question: 哪些设备形态支持IPv4 Vxlan隧道状态改变的告警？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-67
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-67#c15
+  filters: null
+- qid: hw-v600r024c10-security-01-09#hw-v600r024c10-security-01-09#c1
+  question: 如何使能业务平面与管理平面的隔离功能，禁止从业务平面上送管理数据？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-security-01-09
+  expected_chunk_ids:
+  - hw-v600r024c10-security-01-09#c1
+  filters: null
+- qid: hw-v600r024c10-eth-switch-01-12#hw-v600r024c10-eth-switch-01-12#c17
+  question: LBDT与哪些环网协议冲突？当环路解除后，如何手工消除接口Error-down状态？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-eth-switch-01-12
+  expected_chunk_ids:
+  - hw-v600r024c10-eth-switch-01-12#c17
+  filters: null
+- qid: hw-v600r024c10-eth-switch-01-11#hw-v600r024c10-eth-switch-01-11#c16
+  question: 哪些系列的设备在L2VPN场景下不会丢弃目的MAC为BPDU MAC的报文？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-eth-switch-01-11
+  expected_chunk_ids:
+  - hw-v600r024c10-eth-switch-01-11#c16
+  filters: null
+- qid: hw-v600r024c10-security-01-08#hw-v600r024c10-security-01-08#c17
+  question: S6750-H36C的100G端口1-16与哪些端口存在互斥关系？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-security-01-08
+  expected_chunk_ids:
+  - hw-v600r024c10-security-01-08#c17
+  filters: null
+- qid: hw-v600r024c10-eth-switch-01-04#hw-v600r024c10-eth-switch-01-04#c100
+  question: Dot1q终结子接口和QinQ终结子接口收到不带VLAN Tag的报文会如何处理？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-eth-switch-01-04
+  expected_chunk_ids:
+  - hw-v600r024c10-eth-switch-01-04#c100
+  filters: null
+- qid: hw-v600r024c10-ip-route-01-03#hw-v600r024c10-ip-route-01-03#c11
+  question: 静态路由配置了选路依赖迭代深度可能导致什么变化？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-ip-route-01-03
+  expected_chunk_ids:
+  - hw-v600r024c10-ip-route-01-03#c11
+  filters: null
+- qid: hw-v600r024c10-eth-switch-01-02#hw-v600r024c10-eth-switch-01-02#c100
+  question: 如何在DeviceA上配置10GE1/0/1和10GE1/0/2接口MAC地址漂移后关闭？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-eth-switch-01-02
+  expected_chunk_ids:
+  - hw-v600r024c10-eth-switch-01-02#c100
+  filters: null
+- qid: hw-v600r024c10-security-01-05#hw-v600r024c10-security-01-05#c16
+  question: S6750-H系列设备使用display ip source check user-bind status命令可以查看什么？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-security-01-05
+  expected_chunk_ids:
+  - hw-v600r024c10-security-01-05#c16
+  filters: null
+- qid: hw-v600r024c10-security-01-03#hw-v600r024c10-security-01-03#c2
+  question: 基于队列的调度和限速中，如果协议报文超过了队列的最大速率，设备会如何处理这些报文？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-security-01-03
+  expected_chunk_ids:
+  - hw-v600r024c10-security-01-03#c2
+  filters: null
+- qid: hw-v600r024c10-eth-switch-01-09#hw-v600r024c10-eth-switch-01-09#c15
+  question: 在邻居协商机制中，如果一端端口在超时时间内没有收到对端发送的邻居协议报文，端口的邻居状态会被置为什么？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-eth-switch-01-09
+  expected_chunk_ids:
+  - hw-v600r024c10-eth-switch-01-09#c15
+  filters: null
+- qid: hw-v600r024c10-security-01-06#hw-v600r024c10-security-01-06#c16
+  question: 主接口使能端口安全达到预期MAC数量后的动作对附属子接口是否生效？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-security-01-06
+  expected_chunk_ids:
+  - hw-v600r024c10-security-01-06#c16
+  filters: null
+- qid: hw-v600r024c10-eth-switch-01-03#hw-v600r024c10-eth-switch-01-03#c10
+  question: 当DeviceA与DeviceB之间的一条链路故障时，链路聚合组如何调整流量分担？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-eth-switch-01-03
+  expected_chunk_ids:
+  - hw-v600r024c10-eth-switch-01-03#c10
+  filters: null
+- qid: hw-v600r024c10-ip-route-01-07#hw-v600r024c10-ip-route-01-07#c10
+  question: 通过执行什么命令可以修改BGP路由的缺省本地优先级？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-ip-route-01-07
+  expected_chunk_ids:
+  - hw-v600r024c10-ip-route-01-07#c10
+  filters: null
+- qid: hw-v600r024c10-security-01-23#hw-v600r024c10-security-01-23#c11
+  question: 如何配置S6780-H系列设备禁止端口向BD内的其他端口转发未知组播报文？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-security-01-23
+  expected_chunk_ids:
+  - hw-v600r024c10-security-01-23#c11
+  filters: null
+- qid: hw-v600r024c10-security-01-17#hw-v600r024c10-security-01-17#c12
+  question: 如何通过执行命令display remote-attestation iak certificate slot slotid查看RA Client当前使用的IAK证书信息？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-security-01-17
+  expected_chunk_ids:
+  - hw-v600r024c10-security-01-17#c12
+  filters: null
+- qid: hw-v600r024c10-security-01-12#hw-v600r024c10-security-01-12#c12
+  question: 在使用数字签名验证身份时，需要确保什么以防止非法用户冒充被验证者与验证者通信？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-security-01-12
+  expected_chunk_ids:
+  - hw-v600r024c10-security-01-12#c12
+  filters: null
+- qid: hw-v600r024c10-ip-route-01-05#hw-v600r024c10-ip-route-01-05#c100
+  question: 执行命令display ospf [ process-id ] peer，可以查看什么信息？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-ip-route-01-05
+  expected_chunk_ids:
+  - hw-v600r024c10-ip-route-01-05#c100
+  filters: null
+- qid: hw-v600r024c10-security-01-10#hw-v600r024c10-security-01-10#c10
+  question: 证书签名过程中，CA使用哪种算法生成证书的摘要信息？
+  qtype: factual
+  expected_doc_ids:
+  - hw-v600r024c10-security-01-10
+  expected_chunk_ids:
+  - hw-v600r024c10-security-01-10#c10
+  filters: null
+- qid: cisco-c9300-17.9-ip-routing-cg#cisco-c9300-17.9-ip-routing-cg#c1
+  question: Cisco的TCP头部压缩实现是基于哪家大学开发的程序？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ip-routing-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ip-routing-cg#c1
+  filters: null
+- qid: cisco-c9300-17.9-ip-routing-cg#cisco-c9300-17.9-ip-routing-cg#c10
+  question: 使用class class-default命令匹配BFD数据包时，需要注意什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ip-routing-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ip-routing-cg#c10
+  filters: null
+- qid: cisco-c9300-17.9-security-cg#cisco-c9300-17.9-security-cg#c10
+  question: 在配置访问控制列表时，如何使用`igmp-type`参数匹配特定的IGMP消息类型？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-security-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-security-cg#c1007
+  filters: null
+- qid: cisco-c9300-17.9-layer2-cg#cisco-c9300-17.9-layer2-cg#c10
+  question: 启用MST时，使用spanning-tree mode mst全局配置命令会自动启用什么协议？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-layer2-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-layer2-cg#c109
+  filters: null
+- qid: cisco-c9300-17.9-vlan-cg#cisco-c9300-17.9-vlan-cg#c10
+  question: 当你在配置了语音VLAN的接口上启用端口安全时，必须将该端口上的最大允许安全地址设置为多少？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan-cg#c115
+  filters: null
+- qid: cisco-c9300-17.9-ip-routing-cg#cisco-c9300-17.9-ip-routing-cg#c100
+  question: 如何在未运行MBGP的情况下配置MSDP的默认对等体？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ip-routing-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ip-routing-cg#c100
+  filters: null
+- qid: cisco-c9300-17.9-security-cg#cisco-c9300-17.9-security-cg#c100
+  question: 在AAA网络配置中，如果R1和R2被定义为RADIUS服务器组，T1和T2被定义为TACACS+服务器组，那么在方法列表中指定R1和T1用于认证登录，R2和T2用于PPP认证时，如果R1提供会计服务失败，网络访问服务器将尝试使用哪个主机条目继续提供会计服务？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-security-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-security-cg#c100
+  filters: null
+- qid: cisco-c9300-17.9-ip-routing-cg#cisco-c9300-17.9-ip-routing-cg#c1001
+  question: 如何在配置模式下将接口配置为第3层以太网接口并关联VRF？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ip-routing-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ip-routing-cg#c1001
+  filters: null
+- qid: cisco-c9300-17.9-security-cg#cisco-c9300-17.9-security-cg#c1000
+  question: 使用time-range全局配置命令可以基于什么来选择性地应用扩展ACL？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-security-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-security-cg#c1000
+  filters: null
+- qid: cisco-c9300-17.9-layer2-cg#cisco-c9300-17.9-layer2-cg#c103
+  question: 如何使用Cisco Feature Navigator查找平台和软件镜像支持的信息？ 若要访问Cisco Feature Navigator，应前往哪个网址？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-layer2-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-layer2-cg#c103
+  filters: null
+- qid: cisco-c9300-17.9-ip-routing-cg#cisco-c9300-17.9-ip-routing-cg#c1002
+  question: 使用set ip global next hop命令可以指示什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ip-routing-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ip-routing-cg#c1002
+  filters: null
+- qid: cisco-c9300-17.9-security-cg#cisco-c9300-17.9-security-cg#c1001
+  question: 应用ip access-group接口配置命令到三层接口时，该接口必须配置了什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-security-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-security-cg#c1001
+  filters: null
+- qid: cisco-c9300-17.9-layer2-cg#cisco-c9300-17.9-layer2-cg#c104
+  question: MSTP中，哪个实例是唯一发送和接收BPDUs的实例？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-layer2-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-layer2-cg#c113
+  filters: null
+- qid: cisco-c9300-17.9-vlan-cg#cisco-c9300-17.9-vlan-cg#c107
+  question: 如何配置Cisco IP Phone通过指定的语音VLAN发送带有Layer 2 CoS值的语音流量？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan-cg#c117
+  filters: null
+- qid: cisco-c9300-17.9-security-cg#cisco-c9300-17.9-security-cg#c1002
+  question: 如何在交换机上创建并应用IP ACL，包括指定访问列表号码或名称和访问条件，以及将标准和扩展IP ACL应用到VLAN映射？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-security-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-security-cg#c1002
+  filters: null
+- qid: cisco-c9300-17.9-layer2-cg#cisco-c9300-17.9-layer2-cg#c105
+  question: 为了在网络中的冗余路径之间实现负载均衡，所有VLAN-to-instance映射分配必须匹配，否则所有流量将通过单个链路流动，这种说法正确吗？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-layer2-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-layer2-cg#c105
+  filters: null
+- qid: cisco-c9300-17.9-vlan-cg#cisco-c9300-17.9-vlan-cg#c108
+  question: 在配置语音VLAN之前，需要在设备接口上启用QoS，应输入哪个命令？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan-cg#c108
+  filters: null
+- qid: cisco-c9300-17.9-ip-routing-cg#cisco-c9300-17.9-ip-routing-cg#c1006
+  question: 如何在设备的接口配置模式下配置一个Hundred Gigabit Ethernet接口的IP地址？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ip-routing-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ip-routing-cg#c1006
+  filters: null
+- qid: cisco-c9300-17.9-security-cg#cisco-c9300-17.9-security-cg#c1003
+  question: 如何使用命令`access-list 2 deny your_host`定义一个标准IPv4访问列表？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-security-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-security-cg#c1003
+  filters: null
+- qid: cisco-c9300-17.9-layer2-cg#cisco-c9300-17.9-layer2-cg#c106
+  question: 使用命令行接口（CLI）或通过简单网络管理协议（SNMP）支持，可以手动配置MST配置的哪些参数？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-layer2-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-layer2-cg#c106
+  filters: null
+- qid: cisco-c9300-17.9-vlan-cg#cisco-c9300-17.9-vlan-cg#c11
+  question: 使用show vlan命令可以查看哪些信息？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan-cg#c114
+  filters: null
+- qid: cisco-c9300-17.9-security-cg#cisco-c9300-17.9-security-cg#c1004
+  question: 如何在设备上使用命令`access-list 101 permit ip host 10.1.1.2 any precedence 0 tos
+    0 log`定义一个扩展的IPv4访问列表并设置允许条件？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-security-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-security-cg#c1004
+  filters: null
+- qid: cisco-c9300-17.9-layer2-cg#cisco-c9300-17.9-layer2-cg#c108
+  question: MSTP和RSTP在支持IEEE 802.1D标准方面提供了什么？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-layer2-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-layer2-cg#c108
+  filters: null
+- qid: cisco-c9300-17.9-vlan-cg#cisco-c9300-17.9-vlan-cg#c111
+  question: Cisco 7960 IP Phone 默认发送的语音流量的 Layer 3 IP 先进性和 Layer 2 服务类别 (CoS) 值是多少？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-vlan-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-vlan-cg#c111
+  filters: null
+- qid: cisco-c9300-17.9-ip-routing-cg#cisco-c9300-17.9-ip-routing-cg#c1009
+  question: 如何在全局配置模式下定义一个名为10的IPv6扩展访问列表的匹配标准？
+  qtype: factual
+  expected_doc_ids:
+  - cisco-c9300-17.9-ip-routing-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ip-routing-cg#c1009
+  filters: null
+- qid: h3c-r1110-iproute-cmd#h3c-r1110-iproute-cmd#c1
+  question: H3C S6520X-EI & S6520X-HI系列以太网交换机的资料版本是什么？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-iproute-cmd
+  expected_chunk_ids:
+  - h3c-r1110-iproute-cmd#c1
+  filters: null
+- qid: h3c-r1110-security-cfg#h3c-r1110-security-cfg#c1
+  question: H3C S6520X-EI & S6520X-HI系列以太网交换机的安全配置指导由哪家公司提供？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-security-cfg
+  expected_chunk_ids:
+  - h3c-r1110-security-cfg#c1
+  filters: null
+- qid: h3c-r1110-iproute-cmd#h3c-r1110-iproute-cmd#c100
+  question: 什么是FRR静态路由主下一跳信息ID的含义？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-iproute-cmd
+  expected_chunk_ids:
+  - h3c-r1110-iproute-cmd#c100
+  filters: null
+- qid: h3c-r1110-l2sw-cmd#h3c-r1110-l2sw-cmd#c100
+  question: 将5个以太网接口Ten-GigabitEthernet1/0/1～Ten-GigabitEthernet1/0/5定义为myEthPort并进入批量接口视图的命令是什么？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-l2sw-cmd
+  expected_chunk_ids:
+  - h3c-r1110-l2sw-cmd#c100
+  filters: null
+- qid: h3c-r1110-l2sw-cfg#h3c-r1110-l2sw-cfg#c100
+  question: 如何关闭全局的 MAC 地址学习功能？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-l2sw-cfg
+  expected_chunk_ids:
+  - h3c-r1110-l2sw-cfg#c100
+  filters: null
+- qid: h3c-r1110-security-cfg#h3c-r1110-security-cfg#c10
+  question: 如何配置RADIUS服务器的状态？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-security-cfg
+  expected_chunk_ids:
+  - h3c-r1110-security-cfg#c10
+  filters: null
+- qid: h3c-r1110-security-cmd#h3c-r1110-security-cmd#c100
+  question: 如何使用 client 命令指定 RADIUS DAE 客户端的 IPv4 地址和密钥？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-security-cmd
+  expected_chunk_ids:
+  - h3c-r1110-security-cmd#c100
+  filters: null
+- qid: h3c-r1110-iproute-cfg#h3c-r1110-iproute-cfg#c1000
+  question: 如何通过命令进入 BGP IPv4 单播地址族视图？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-iproute-cfg
+  expected_chunk_ids:
+  - h3c-r1110-iproute-cfg#c1000
+  filters: null
+- qid: h3c-r1110-iproute-cmd#h3c-r1110-iproute-cmd#c1000
+  question: 如何使用命令使能 GR Helper 严格 LSA 检查能力？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-iproute-cmd
+  expected_chunk_ids:
+  - h3c-r1110-iproute-cmd#c1000
+  filters: null
+- qid: h3c-r1110-l2sw-cmd#h3c-r1110-l2sw-cmd#c102
+  question: 如何配置MAC地址表中的单播静态、动态、黑洞地址表项和多端口单播地址表项？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-l2sw-cmd
+  expected_chunk_ids:
+  - h3c-r1110-l2sw-cmd#c102
+  filters: null
+- qid: h3c-r1110-l2sw-cfg#h3c-r1110-l2sw-cfg#c102
+  question: 如何关闭接口的 MAC 地址学习功能？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-l2sw-cfg
+  expected_chunk_ids:
+  - h3c-r1110-l2sw-cfg#c102
+  filters: null
+- qid: h3c-r1110-security-cfg#h3c-r1110-security-cfg#c100
+  question: 如何在设备上设置RADIUS 15号属性值的检查方式以适应不支持自定义属性的RADIUS服务器进行SSH、FTP、Terminal用户认证？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-security-cfg
+  expected_chunk_ids:
+  - h3c-r1110-security-cfg#c100
+  filters: null
+- qid: h3c-r1110-security-cmd#h3c-r1110-security-cmd#c1000
+  question: 在使用 ssh2 ipv6 server 命令时，如何指定服务器的端口号？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-security-cmd
+  expected_chunk_ids:
+  - h3c-r1110-security-cmd#c1000
+  filters: null
+- qid: h3c-r1110-iproute-cfg#h3c-r1110-iproute-cfg#c1002
+  question: 如何配置 BGP IPv6 单播地址族视图中的 MED 缺省值？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-iproute-cfg
+  expected_chunk_ids:
+  - h3c-r1110-iproute-cfg#c1002
+  filters: null
+- qid: h3c-r1110-iproute-cmd#h3c-r1110-iproute-cmd#c1001
+  question: 如何配置 OSPFv3 进程 1 的 GR 重启间隔时间为 100 秒？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-iproute-cmd
+  expected_chunk_ids:
+  - h3c-r1110-iproute-cmd#c1001
+  filters: null
+- qid: h3c-r1110-l2sw-cmd#h3c-r1110-l2sw-cmd#c103
+  question: display mac-address 命令中，参数 dynamic 用来显示什么类型的 MAC 地址表项？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-l2sw-cmd
+  expected_chunk_ids:
+  - h3c-r1110-l2sw-cmd#c103
+  filters: null
+- qid: h3c-r1110-l2sw-cfg#h3c-r1110-l2sw-cfg#c104
+  question: 如何关闭VLAN的MAC地址学习功能？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-l2sw-cfg
+  expected_chunk_ids:
+  - h3c-r1110-l2sw-cfg#c104
+  filters: null
+- qid: h3c-r1110-security-cfg#h3c-r1110-security-cfg#c1000
+  question: 如何使用pki import domain命令以离线方式导入证书？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-security-cfg
+  expected_chunk_ids:
+  - h3c-r1110-security-cfg#c1000
+  filters: null
+- qid: h3c-r1110-security-cmd#h3c-r1110-security-cmd#c1001
+  question: 在配置服务器所属的 VPN 实例时，vpn-instance-name 参数的长度限制是多少个字符？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-security-cmd
+  expected_chunk_ids:
+  - h3c-r1110-security-cmd#c1001
+  filters: null
+- qid: h3c-r1110-iproute-cfg#h3c-r1110-iproute-cfg#c1004
+  question: 如何配置允许比较来自不同 AS 路由的 MED 属性值？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-iproute-cfg
+  expected_chunk_ids:
+  - h3c-r1110-iproute-cfg#c1004
+  filters: null
+- qid: h3c-r1110-iproute-cmd#h3c-r1110-iproute-cmd#c1002
+  question: 使用哪个命令可以引入指定AS号的IPv6 EBGP路由？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-iproute-cmd
+  expected_chunk_ids:
+  - h3c-r1110-iproute-cmd#c1002
+  filters: null
+- qid: h3c-r1110-l2sw-cmd#h3c-r1110-l2sw-cmd#c104
+  question: 如何显示 VLAN 100 的 MAC 地址表项信息？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-l2sw-cmd
+  expected_chunk_ids:
+  - h3c-r1110-l2sw-cmd#c104
+  filters: null
+- qid: h3c-r1110-l2sw-cfg#h3c-r1110-l2sw-cfg#c105
+  question: 如何配置接口的 MAC 地址数学习上限以控制设备维护的 MAC 地址表的表项数量？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-l2sw-cfg
+  expected_chunk_ids:
+  - h3c-r1110-l2sw-cfg#c105
+  filters: null
+- qid: h3c-r1110-security-cfg#h3c-r1110-security-cfg#c1001
+  question: 如果配置为开启 CRL 检查，但 PKI 域中未配置 CRL 发布点的 URL，设备将如何获取 CRL？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-security-cfg
+  expected_chunk_ids:
+  - h3c-r1110-security-cfg#c1001
+  filters: null
+- qid: h3c-r1110-security-cmd#h3c-r1110-security-cmd#c1002
+  question: 客户端到服务器端的首选加密算法 prefer-ctos-cipher 的缺省值是什么？
+  qtype: factual
+  expected_doc_ids:
+  - h3c-r1110-security-cmd
+  expected_chunk_ids:
+  - h3c-r1110-security-cmd#c1002
+  filters: null
+- qid: hw-v600r025c00-ip-route-01-03#hw-v600r025c00-ip-route-01-03#c89
+  question: 在DeviceA和DeviceB之间配置了BFD会话检测链路故障后，如果发现BFD会话无法正常建立，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r025c00-ip-route-01-03
+  expected_chunk_ids:
+  - hw-v600r025c00-ip-route-01-03#c89
+  filters: null
+- qid: hw-v600r025c00-alarm-01-71#hw-v600r025c00-alarm-01-71#c81
+  question: 在配置网络设备时，如果发现VPN实例下的PIM SM表项数目达到预警阈值，继续创建表项可能会导致表项超限，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-71
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-71#c81
+  filters: null
+- qid: hw-v600r025c00-alarm-01-16#hw-v600r025c00-alarm-01-16#c22
+  question: 网络中出现了丢弃非法DHCP报文的告警，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-16
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-16#c22
+  filters: null
+- qid: hw-v600r025c00-alarm-01-99#hw-v600r025c00-alarm-01-99#c45
+  question: 电源模块的A平面输入过压，该如何排查和处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-99
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-99#c45
+  filters: null
+- qid: hw-v600r025c00-eth-switch-01-03#hw-v600r025c00-eth-switch-01-03#c7
+  question: Port1接口出现故障而后又恢复了正常，但Port1没有重新成为活动接口，而是处于备份状态。如果希望Port1在故障恢复后重新成为活动接口，该如何配置LACP抢占功能？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r025c00-eth-switch-01-03
+  expected_chunk_ids:
+  - hw-v600r025c00-eth-switch-01-03#c7
+  filters: null
+- qid: hw-v600r025c00-alarm-01-44#hw-v600r025c00-alarm-01-44#c7
+  question: 网络设备的某个接口不能正常转发报文，检查发现接口为DOWN状态或接口IPv6地址不可用，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-44
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-44#c7
+  filters: null
+- qid: hw-v600r025c00-alarm-01-01#hw-v600r025c00-alarm-01-01#c6
+  question: 在使用SSH2.0版本进行网络设备管理时，发现使用CBC模式的对称加密算法可能存在数据泄露的风险，该如何处理以确保数据传输的安全性？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-01
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-01#c6
+  filters: null
+- qid: hw-v600r025c00-alarm-01-99#hw-v600r025c00-alarm-01-99#c108
+  question: 如果设备出现温度偏高告警或历史告警，该如何收集信息并联系技术支持人员？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-99
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-99#c108
+  filters: null
+- qid: hw-v600r025c00-alarm-01-47#hw-v600r025c00-alarm-01-47#c187
+  question: 静态PW承载的业务出现恢复，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-47
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-47#c187
+  filters: null
+- qid: hw-v600r025c00-alarm-01-71#hw-v600r025c00-alarm-01-71#c10
+  question: 如果网络设备接口状态显示为Down，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-71
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-71#c10
+  filters: null
+- qid: hw-v600r025c00-alarm-01-13#hw-v600r025c00-alarm-01-13#c102
+  question: 主备板之间数据无法同步，主备回退点文件出现不一致，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-13
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-13#c102
+  filters: null
+- qid: hw-v600r025c00-alarm-01-33#hw-v600r025c00-alarm-01-33#c30
+  question: 当网络设备出现VB信息参数无对系统的影响的告警时，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-33
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-33#c30
+  filters: null
+- qid: hw-v600r025c00-eth-switch-01-03#hw-v600r025c00-eth-switch-01-03#c8
+  question: 当服务器A重启后为空配置，导致LACP协商失败，此时动态LACP模式下的Eth-Trunk成员接口状态变为Indep，服务器A如何通过这些成员接口从文件服务器B获取配置文件？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r025c00-eth-switch-01-03
+  expected_chunk_ids:
+  - hw-v600r025c00-eth-switch-01-03#c8
+  filters: null
+- qid: hw-v600r025c00-alarm-01-08#hw-v600r025c00-alarm-01-08#c49
+  question: BFD会话所检测的链路转发能力恢复或BFD会话恢复后，业务流量恢复正常，这种情况该如何处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r025c00-alarm-01-08
+  expected_chunk_ids:
+  - hw-v600r025c00-alarm-01-08#c49
+  filters: null
+- qid: hw-v600r024c10-ip-route-01-07#hw-v600r024c10-ip-route-01-07#c57
+  question: 在配置BGP时，如果将4字节AS号的显示格式从点分形式切换到整数形式，发现AS-Path正则表达式和扩展团体属性过滤器的匹配结果受到影响，导致路由不能匹配出口或入口策略，该如何重新配置AS-Path正则表达式和扩展团体属性过滤器以避免网络故障？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r024c10-ip-route-01-07
+  expected_chunk_ids:
+  - hw-v600r024c10-ip-route-01-07#c57
+  filters: null
+- qid: hw-v600r024c10-ip-route-01-02#hw-v600r024c10-ip-route-01-02#c49
+  question: 在网络设备上配置了接口的链路层协议参数和IPv4地址后，发现系统CPU占用率持续升高，疑似路由或隧道频繁震荡导致业务反复进行迭代。应该如何排查或处理这个问题？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r024c10-ip-route-01-02
+  expected_chunk_ids:
+  - hw-v600r024c10-ip-route-01-02#c49
+  filters: null
+- qid: hw-v600r024c10-ip-route-01-07#hw-v600r024c10-ip-route-01-07#c204
+  question: 在网络中，如果EBGP邻居所使用的接口状态反复变化，导致EBGP会话反复重建与删除，造成网络震荡，该如何去使能EBGP邻居快速复位功能以抑制这种震荡？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r024c10-ip-route-01-07
+  expected_chunk_ids:
+  - hw-v600r024c10-ip-route-01-07#c204
+  filters: null
+- qid: hw-v600r024c10-eth-switch-01-10#hw-v600r024c10-eth-switch-01-10#c3
+  question: 在网络中使用ERPS协议时，如果发现环路收敛速度慢，不满足电信级可靠性要求，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r024c10-eth-switch-01-10
+  expected_chunk_ids:
+  - hw-v600r024c10-eth-switch-01-10#c3
+  filters: null
+- qid: hw-v600r024c10-eth-switch-01-08#hw-v600r024c10-eth-switch-01-08#c43
+  question: 在网络中运行生成树算法时，如果设备在配置的超时时间（超时时间＝Hello Time × 3× Timer Factor）内没有收到上游设备发送的BPDU，就认为上游设备已经出现故障，本设备会重新进行生成树计算。如果是因为上游设备繁忙导致长时间收不到BPDU，该如何配置超时时间以减少网络资源的浪费？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r024c10-eth-switch-01-08
+  expected_chunk_ids:
+  - hw-v600r024c10-eth-switch-01-08#c43
+  filters: null
+- qid: hw-v600r024c10-ip-route-01-07#hw-v600r024c10-ip-route-01-07#c231
+  question: 在网络中，DeviceA通过BGP Auto FRR配置了从DeviceB和DeviceC学到的相同前缀的路由，主链路为LinkA，备份链路为LinkB。如果LinkA经过的节点或链路出现故障，导致DeviceA到DeviceB的下一跳信息失效，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r024c10-ip-route-01-07
+  expected_chunk_ids:
+  - hw-v600r024c10-ip-route-01-07#c231
+  filters: null
+- qid: hw-v600r024c10-eth-switch-01-03#hw-v600r024c10-eth-switch-01-03#c10~2
+  question: 在DeviceA与DeviceB之间配置了手工模式Eth-Trunk，三条活动链路都参与数据转发并分担流量。如果其中一条链路故障，导致该链路无法转发数据，链路聚合组自动在剩余的两条活动链路中分担流量，这种情况下该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r024c10-eth-switch-01-03
+  expected_chunk_ids:
+  - hw-v600r024c10-eth-switch-01-03#c10
+  filters: null
+- qid: hw-v600r024c10-ip-route-01-08#hw-v600r024c10-ip-route-01-08#c123
+  question: 在配置了BGP4+邻居震荡抑制功能后，如果发现BGP4+对等体建立后很快断开，又很快建立，这种频繁震荡的情况导致CPU占用率升高，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600r024c10-ip-route-01-08
+  expected_chunk_ids:
+  - hw-v600r024c10-ip-route-01-08#c123
+  filters: null
+- qid: cisco-c9300-17.9-security-cg#cisco-c9300-17.9-security-cg#c19
+  question: 在网络设备上配置了RADIUS授权后，如果网络访问服务器在联系RADIUS服务器时遇到错误，导致用户登录时无法启动EXEC shell，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - cisco-c9300-17.9-security-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-security-cg#c244
+  filters: null
+- qid: cisco-c9300-17.9-ip-routing-cg#cisco-c9300-17.9-ip-routing-cg#c69
+  question: 在网络设备上，如果需要维护和排查BFD相关的问题，应该使用哪些命令来检索BFD信息？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - cisco-c9300-17.9-ip-routing-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ip-routing-cg#c69
+  filters: null
+- qid: cisco-c9300-17.9-security-cg#cisco-c9300-17.9-security-cg#c14
+  question: 设备在4月22日23:11:14.203时出现了证书过期的告警，CRYPTO_PKI_AAA协议检测到cert-lifetime-end已过期，导致授权失败。这种情况下，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - cisco-c9300-17.9-security-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-security-cg#c2148
+  filters: null
+- qid: cisco-c9300-17.9-layer2-cg#cisco-c9300-17.9-layer2-cg#c19
+  question: 在网络中，Best Master Clock Algorithm (BMCA) 基于 IEEE 1588-2008 协议运行，用于确定子域中的最佳主时钟。如果网络中出现两个主时钟或没有主时钟的告警，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - cisco-c9300-17.9-layer2-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-layer2-cg#c345
+  filters: null
+- qid: h3c-r1110-security-cmd#h3c-r1110-security-cmd#c979
+  question: 在配置SFTP客户端采用publickey认证方式连接IPv6地址为2000::1的SFTP服务器时，如果未指定验证服务端证书的PKI域名称，导致客户端无法正确验证服务器证书，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - h3c-r1110-security-cmd
+  expected_chunk_ids:
+  - h3c-r1110-security-cmd#c979
+  filters: null
+- qid: h3c-r1110-iproute-cmd#h3c-r1110-iproute-cmd#c81
+  question: 在网络设备上配置了 inter-protocol fast-reroute 命令后，发现当路由器检测到网络故障时，流量中断的时间并没有明显缩短，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - h3c-r1110-iproute-cmd
+  expected_chunk_ids:
+  - h3c-r1110-iproute-cmd#c81
+  filters: null
+- qid: h3c-r1110-security-cmd#h3c-r1110-security-cmd#c556
+  question: 在使用网络设备时，如果发现本地设备的私钥泄露，或者保存密钥对的存储设备出现故障导致设备上没有公钥对应的私钥，无法再利用旧的非对称密钥对进行加解密和数字签名，又或者是本地证书到达有效期，需要删除对应的本地密钥对，该如何使用命令销毁旧的非对称密钥对？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - h3c-r1110-security-cmd
+  expected_chunk_ids:
+  - h3c-r1110-security-cmd#c556
+  filters: null
+- qid: h3c-r1110-iproute-cfg#h3c-r1110-iproute-cfg#c1343
+  question: 在网络中，当启动了RIPng的设备进行协议重启或主备倒换时，出现了网络暂时中断的现象，该如何配置GR机制以避免这种情况？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - h3c-r1110-iproute-cfg
+  expected_chunk_ids:
+  - h3c-r1110-iproute-cfg#c1343
+  filters: null
+- qid: h3c-r1110-iproute-cfg#h3c-r1110-iproute-cfg#c65
+  question: 在配置双向检测时，如果发现直连下一跳的链路状态检测不正常，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - h3c-r1110-iproute-cfg
+  expected_chunk_ids:
+  - h3c-r1110-iproute-cfg#c65
+  filters: null
+- qid: h3c-r1110-security-cmd#h3c-r1110-security-cmd#c1121
+  question: 在配置网络设备时，开启了ipv6 nd detection log enable命令后，设备性能有所下降，出现了大量ND Detection日志信息。这时应该如何关闭ND
+    Detection日志功能以提升设备性能？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - h3c-r1110-security-cmd
+  expected_chunk_ids:
+  - h3c-r1110-security-cmd#c1121
+  filters: null
+- qid: h3c-r1110-l2sw-cfg#h3c-r1110-l2sw-cfg#c213
+  question: 链路聚合使用了BFD协议，但当链路发生故障时，聚合组未能快速响应。如何通过BFD会话来实现对成员链路故障的快速检测？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - h3c-r1110-l2sw-cfg
+  expected_chunk_ids:
+  - h3c-r1110-l2sw-cfg#c213
+  filters: null
+- qid: h3c-r1110-iproute-cfg#h3c-r1110-iproute-cfg#c1278
+  question: 在网络中配置了静态路由后，如果网络拓扑发生变化导致路由失效，该如何排查和处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - h3c-r1110-iproute-cfg
+  expected_chunk_ids:
+  - h3c-r1110-iproute-cfg#c1278
+  filters: null
+- qid: hw-v600-case-01-03#hw-v600-case-01-03#c997
+  question: 在S5700或S6700系列交换机上，如果配置了Portal服务器故障时的逃生权限和Portal服务器恢复后的重认证功能，当Portal服务器出现故障时，用户能够被授权使用业务方案s1，但Portal服务器恢复后，用户没有进行重认证，该如何处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600-case-01-03
+  expected_chunk_ids:
+  - hw-v600-case-01-03#c997
+  filters: null
+- qid: hw-v600-case-01-02#hw-v600-case-01-02#c64
+  question: 在配置了VRRP联动接口检测链路的情况下，如果CORE1的上行接口10GE 1/0/7出现故障，CORE1到CORE2的互联链路负担增加，该如何配置VRRP与上行接口状态联动功能以实现主备快速切换？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600-case-01-02
+  expected_chunk_ids:
+  - hw-v600-case-01-02#c64
+  filters: null
+- qid: hw-v600-case-01-03#hw-v600-case-01-03#c575
+  question: 在网络设备中，我观察到建立了一个多跳（Multiple Hops）的BFD会话，且状态为Up。但是，当对DeviceA的Vlanif100接口执行shutdown操作，模拟链路故障后，再次查看DeviceA上的BFD会话状态时，发现会话状态变为Down。这种情况下，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600-case-01-03
+  expected_chunk_ids:
+  - hw-v600-case-01-03#c575
+  filters: null
+- qid: hw-v600-case-01-03#hw-v600-case-01-03#c347
+  question: 在网络中配置了静态路由后，发现不同网段的主机之间无法互通，应该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600-case-01-03
+  expected_chunk_ids:
+  - hw-v600-case-01-03#c347
+  filters: null
+- qid: hw-v600-case-01-03#hw-v600-case-01-03#c656
+  question: 在配置S5700, S6700系列交换机的M-LAG双归接入三层网络时，如果发现当一条接入链路（如10GE1/0/1）发生故障时，流量没有快速切换到另一条链路（如10GE1/0/2），导致网络可靠性下降，该如何排查或处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600-case-01-03
+  expected_chunk_ids:
+  - hw-v600-case-01-03#c656
+  filters: null
+- qid: hw-v600-case-01-03#hw-v600-case-01-03#c782
+  question: 在网络中配置了主备HWTACACS服务器后，如果发现用户认证时出现“用户名中包含域名但HWTACACS服务器不支持”的告警，该如何处理？
+  qtype: troubleshoot
+  expected_doc_ids:
+  - hw-v600-case-01-03
+  expected_chunk_ids:
+  - hw-v600-case-01-03#c782
+  filters: null
+- qid: hw-v600r025c00-security-01-11#hw-v600r025c00-security-01-11#c17+hw-v600r025c00-security-01-11#c16
+  question: 如何配置一个接口为信任接口以防止PPPoE Server欺骗，并且在开启全局PPPoE+功能后，该信任接口如何处理PPPoE Discovery阶段和PPPoE
+    Session阶段的报文？
+  qtype: multihop
+  expected_doc_ids:
+  - hw-v600r025c00-security-01-11
+  expected_chunk_ids:
+  - hw-v600r025c00-security-01-11#c17
+  - hw-v600r025c00-security-01-11#c16
+  filters: null
+- qid: hw-v600r025c00-ip-route-01-09#hw-v600r025c00-ip-route-01-09#c125+hw-v600r025c00-ip-route-01-09#c128
+  question: 在配置IS-IS智能收敛功能时，如果接口状态频繁在Up和Down之间切换，导致邻居状态震荡，应该如何设置detecting-interval和resume-interval参数，以确保快速收敛的同时有效抑制邻居震荡？
+  qtype: multihop
+  expected_doc_ids:
+  - hw-v600r025c00-ip-route-01-09
+  expected_chunk_ids:
+  - hw-v600r025c00-ip-route-01-09#c125
+  - hw-v600r025c00-ip-route-01-09#c128
+  filters: null
+- qid: hw-v600r025c00-ip-route-01-07#hw-v600r025c00-ip-route-01-07#c213+hw-v600r025c00-ip-route-01-07#c231
+  question: 如何配置BGP动态对等体组以减少维护工作量，并同时启用BGP Peer Tracking功能来提高网络稳定性？请提供具体的命令和参数。
+  qtype: multihop
+  expected_doc_ids:
+  - hw-v600r025c00-ip-route-01-07
+  expected_chunk_ids:
+  - hw-v600r025c00-ip-route-01-07#c213
+  - hw-v600r025c00-ip-route-01-07#c231
+  filters: null
+- qid: hw-v600r025c00-ip-route-01-10#hw-v600r025c00-ip-route-01-10#c30+hw-v600r025c00-ip-route-01-10#c31
+  question: 如何使用display rip process-id route命令查看RIP路由，并结合水平分割（Split Horizon）机制解释在广播网、P2P和P2MP网络中防止路由环路的具体原理？
+  qtype: multihop
+  expected_doc_ids:
+  - hw-v600r025c00-ip-route-01-10
+  expected_chunk_ids:
+  - hw-v600r025c00-ip-route-01-10#c30
+  - hw-v600r025c00-ip-route-01-10#c31
+  filters: null
+- qid: hw-v600r025c00-security-01-10#hw-v600r025c00-security-01-10#c107+hw-v600r025c00-security-01-10#c39
+  question: 如何配置DeviceA的证书属性访问控制策略，以确保只有颁发者名称为networkb_ca且主题名为cert_ca的证书能够通过验证，同时在创建PKI实体时需要配置哪些参数以避免证书申请失败？
+  qtype: multihop
+  expected_doc_ids:
+  - hw-v600r025c00-security-01-10
+  expected_chunk_ids:
+  - hw-v600r025c00-security-01-10#c107
+  - hw-v600r025c00-security-01-10#c39
+  filters: null
+- qid: hw-v600r025c00-ip-route-01-05#hw-v600r025c00-ip-route-01-05#c169+hw-v600r025c00-ip-route-01-05#c197
+  question: 如何在DeviceB上配置成员口接口状态联动OSPF路由开销值，以确保当DeviceB故障恢复且BGP路由尚未完成收敛时，从DeviceA去往10.3.1.0/30的流量不会被丢弃？
+  qtype: multihop
+  expected_doc_ids:
+  - hw-v600r025c00-ip-route-01-05
+  expected_chunk_ids:
+  - hw-v600r025c00-ip-route-01-05#c169
+  - hw-v600r025c00-ip-route-01-05#c197
+  filters: null
+- qid: hw-v600r025c00-security-01-08#hw-v600r025c00-security-01-08#c39+hw-v600r025c00-security-01-08#c3
+  question: 在配置网络设备时，如果需要清除指定接口的MKA协议报文统计信息和经过MACsec保护的数据报文统计信息，应分别执行什么命令？此外，清除这些统计信息后，是否会影响正在进行的MKA会话保活过程，以及设备与客户端之间的安全通信？
+  qtype: multihop
+  expected_doc_ids:
+  - hw-v600r025c00-security-01-08
+  expected_chunk_ids:
+  - hw-v600r025c00-security-01-08#c39
+  - hw-v600r025c00-security-01-08#c3
+  filters: null
+- qid: hw-v600r025c00-eth-switch-01-08#hw-v600r025c00-eth-switch-01-08#c40+hw-v600r025c00-eth-switch-01-08#c42
+  question: 如何在S6780-H系列设备上配置端口为边缘端口并启用BPDU filter功能，同时设置生成树协议的网络直径以优化网络收敛速度？
+  qtype: multihop
+  expected_doc_ids:
+  - hw-v600r025c00-eth-switch-01-08
+  expected_chunk_ids:
+  - hw-v600r025c00-eth-switch-01-08#c40
+  - hw-v600r025c00-eth-switch-01-08#c42
+  filters: null
+- qid: hw-v600r025c00-security-01-03#hw-v600r025c00-security-01-03#c43+hw-v600r025c00-security-01-03#c47
+  question: 如何通过执行命令display cpu-defend auto-port-defend statistics slot slot-id来查看由于用户级限速而被丢弃的报文统计信息，并确认这些设备是否支持配置协议报文限速的丢包监控？
+  qtype: multihop
+  expected_doc_ids:
+  - hw-v600r025c00-security-01-03
+  expected_chunk_ids:
+  - hw-v600r025c00-security-01-03#c43
+  - hw-v600r025c00-security-01-03#c47
+  filters: null
+- qid: hw-v600r024c10-eth-switch-01-08#hw-v600r024c10-eth-switch-01-08#c59+hw-v600r024c10-eth-switch-01-08#c57
+  question: 在使用display vbst port-vlan statistics命令查看VBST的PV数统计信息时，如果发现与Handreamnet交换机混合组网中出现了临时环路，应如何配置接口以丢弃Handreamnet交换机发送的非标准STP/RSTP协议报文来避免这一问题？
+  qtype: multihop
+  expected_doc_ids:
+  - hw-v600r024c10-eth-switch-01-08
+  expected_chunk_ids:
+  - hw-v600r024c10-eth-switch-01-08#c59
+  - hw-v600r024c10-eth-switch-01-08#c57
+  filters: null
+- qid: hw-v600r024c10-ip-route-01-10#hw-v600r024c10-ip-route-01-10#c37+hw-v600r024c10-ip-route-01-10#c36
+  question: 如何使用display rip process-id命令查看RIP路由，并结合timers rip triggered命令调整RIP触发更新定时器以优化网络收敛时间？
+  qtype: multihop
+  expected_doc_ids:
+  - hw-v600r024c10-ip-route-01-10
+  expected_chunk_ids:
+  - hw-v600r024c10-ip-route-01-10#c37
+  - hw-v600r024c10-ip-route-01-10#c36
+  filters: null
+- qid: hw-v600r024c10-security-01-04#hw-v600r024c10-security-01-04#c19+hw-v600r024c10-security-01-04#c20
+  question: 如何在S6750-H系列设备上配置接口入方向和出方向的流量抑制，以确保既能够按百分比限制入方向的广播流量，又能够完全阻断出方向的未知单播流量？请提供具体的配置命令。
+  qtype: multihop
+  expected_doc_ids:
+  - hw-v600r024c10-security-01-04
+  expected_chunk_ids:
+  - hw-v600r024c10-security-01-04#c19
+  - hw-v600r024c10-security-01-04#c20
+  filters: null
+- qid: hw-v600r024c10-ip-route-01-05#hw-v600r024c10-ip-route-01-05#c294+hw-v600r024c10-ip-route-01-05#c80
+  question: 在配置OSPF区域路由聚合功能时，如何确保DeviceB的Router ID在自治系统中唯一，且正确配置Vlanif10、Vlanif20、Vlanif30接口的IP地址以实现DeviceA与DeviceB、DeviceB与DeviceC之间的OSPF互连？
+  qtype: multihop
+  expected_doc_ids:
+  - hw-v600r024c10-ip-route-01-05
+  expected_chunk_ids:
+  - hw-v600r024c10-ip-route-01-05#c294
+  - hw-v600r024c10-ip-route-01-05#c80
+  filters: null
+- qid: hw-v600r024c10-security-01-15#hw-v600r024c10-security-01-15#c46+hw-v600r024c10-security-01-15#c9
+  question: 在配置DeviceA和DeviceB通过BGP实现互通并使用Keychain提供动态安全认证服务时，如果需要确保TCP增强认证选项中的Kind和Alg-id字段能够正确匹配，以实现不同厂商设备间的互通，应该如何配置这些参数，并且在配置过程中需要注意哪些事项来避免认证失败或丢包？
+  qtype: multihop
+  expected_doc_ids:
+  - hw-v600r024c10-security-01-15
+  expected_chunk_ids:
+  - hw-v600r024c10-security-01-15#c46
+  - hw-v600r024c10-security-01-15#c9
+  filters: null
+- qid: cisco-c9300-17.9-ip-routing-cg#cisco-c9300-17.9-ip-routing-cg#c126+cisco-c9300-17.9-ip-routing-cg#c30
+  question: 如何在配置MSDP时使用ip msdp sa-filter out命令结合BFD支持，确保只有满足特定条件的(S,G)对通过过滤器，并且如何验证BFD邻居是否活跃？
+  qtype: multihop
+  expected_doc_ids:
+  - cisco-c9300-17.9-ip-routing-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ip-routing-cg#c126
+  - cisco-c9300-17.9-ip-routing-cg#c30
+  filters: null
+- qid: cisco-c9300-17.9-security-cg#cisco-c9300-17.9-security-cg#c1398+cisco-c9300-17.9-security-cg#c2010
+  question: 如何使用Cisco Feature Navigator查找关于设备追踪绑定可达生命周期（device-tracking binding reachable-lifetime）命令在不同软件版本中的支持情况，并在从旧版本迁移时正确移除该配置？
+  qtype: multihop
+  expected_doc_ids:
+  - cisco-c9300-17.9-security-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-security-cg#c1398
+  - cisco-c9300-17.9-security-cg#c2010
+  filters: null
+- qid: cisco-c9300-17.9-layer2-cg#cisco-c9300-17.9-layer2-cg#c13+cisco-c9300-17.9-layer2-cg#c103
+  question: 如何在Cisco设备上配置BPDU的跳数限制，并确保该配置符合Cisco Feature Navigator中关于平台和软件镜像的支持信息？
+  qtype: multihop
+  expected_doc_ids:
+  - cisco-c9300-17.9-layer2-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-layer2-cg#c174
+  - cisco-c9300-17.9-layer2-cg#c184
+  filters: null
+- qid: cisco-c9300-17.9-security-cg#cisco-c9300-17.9-security-cg#c2089+cisco-c9300-17.9-security-cg#c997
+  question: 如何通过配置VLAN地图和IPsec静态虚拟隧道接口来确保从10.0.149.203到10.0.149.217的数据包在不匹配任何VLAN地图条目时被丢弃，同时保证隧道接口的状态为“up”且线路协议状态也为“up”？
+  qtype: multihop
+  expected_doc_ids:
+  - cisco-c9300-17.9-security-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-security-cg#c2089
+  - cisco-c9300-17.9-security-cg#c997
+  filters: null
+- qid: cisco-c9300-17.9-security-cg#cisco-c9300-17.9-security-cg#c1025+cisco-c9300-17.9-security-cg#c1080
+  question: 在配置IPv6 FQDN ACL时，如果需要在指定接口上控制访问，为什么不能同时配置源和目的主机地址的动态主机配置，且该接口必须是Layer
+    3接口？
+  qtype: multihop
+  expected_doc_ids:
+  - cisco-c9300-17.9-security-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-security-cg#c1025
+  - cisco-c9300-17.9-security-cg#c1080
+  filters: null
+- qid: cisco-c9300-17.9-ip-routing-cg#cisco-c9300-17.9-ip-routing-cg#c191+cisco-c9300-17.9-ip-routing-cg#c352
+  question: 如何在Cisco IOS中配置VRF-aware服务以实现对特定VRF的主机进行ping操作，并查看该VRF的ARP条目？
+  qtype: multihop
+  expected_doc_ids:
+  - cisco-c9300-17.9-ip-routing-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-ip-routing-cg#c1054
+  - cisco-c9300-17.9-ip-routing-cg#c1122
+  filters: null
+- qid: cisco-c9300-17.9-security-cg#cisco-c9300-17.9-security-cg#c1252+cisco-c9300-17.9-security-cg#c1636
+  question: 如何在Cisco IOS XE Amsterdam 17.1.1中配置IPv6 ND Inspection Policy，并使用哪个命令来显示网络准入缓存条目和Web认证会话的信息？
+  qtype: multihop
+  expected_doc_ids:
+  - cisco-c9300-17.9-security-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-security-cg#c1252
+  - cisco-c9300-17.9-security-cg#c1636
+  filters: null
+- qid: cisco-c9300-17.9-layer2-cg#cisco-c9300-17.9-layer2-cg#c274+cisco-c9300-17.9-layer2-cg#c42
+  question: 在配置Layer 2 EtherChannels时，如果使用LACP模式并指定了16个以太网端口，其中8个端口处于活动状态，另外8个端口处于备用状态，那么这些端口在参与PVST+或Rapid
+    PVST+协议时，如何确保在发生拓扑变化时，活动端口和备用端口之间的切换不会导致网络环路？
+  qtype: multihop
+  expected_doc_ids:
+  - cisco-c9300-17.9-layer2-cg
+  expected_chunk_ids:
+  - cisco-c9300-17.9-layer2-cg#c274
+  - cisco-c9300-17.9-layer2-cg#c42
+  filters: null
+- qid: h3c-r1110-security-cfg#h3c-r1110-security-cfg#c119+h3c-r1110-security-cfg#c1219
+  question: 在配置RADIUS方案视图时，如果需要使用H3C iMC扩展功能进行accounting-on，同时在IKE配置中选择预共享密钥认证方式，应该如何确保中心侧设备能够与多个分支设备顺利进行IKE协商，且在系统视图下没有配置IKE
+    profile的情况下，使用全局的IKE参数进行协商？
+  qtype: multihop
+  expected_doc_ids:
+  - h3c-r1110-security-cfg
+  expected_chunk_ids:
+  - h3c-r1110-security-cfg#c119
+  - h3c-r1110-security-cfg#c1219
+  filters: null
+- qid: h3c-r1110-l2sw-cmd#h3c-r1110-l2sw-cmd#c103+h3c-r1110-l2sw-cmd#c201
+  question: 如何使用 display mac-address 命令查看指定 VLAN 的动态 MAC 地址表项，并解释端口状态为 FORWARDING
+    时，端口在生成树协议中的角色和作用？
+  qtype: multihop
+  expected_doc_ids:
+  - h3c-r1110-l2sw-cmd
+  expected_chunk_ids:
+  - h3c-r1110-l2sw-cmd#c103
+  - h3c-r1110-l2sw-cmd#c201
+  filters: null
+- qid: h3c-r1110-l2sw-cfg#h3c-r1110-l2sw-cfg#c177+h3c-r1110-l2sw-cfg#c29
+  question: 如何在设备上配置一个三层聚合接口，并将其工作模式从缺省的静态聚合模式改为动态聚合模式，同时设置端口的LACP工作模式为PASSIVE？
+  qtype: multihop
+  expected_doc_ids:
+  - h3c-r1110-l2sw-cfg
+  expected_chunk_ids:
+  - h3c-r1110-l2sw-cfg#c177
+  - h3c-r1110-l2sw-cfg#c29
+  filters: null
+- qid: h3c-r1110-security-cfg#h3c-r1110-security-cfg#c1485+h3c-r1110-security-cfg#c190
+  question: 如何在配置 Stelnet Suite B 客户端时，确保设备上传到服务器的用户在线时间中包含由 AAA 授权的闲置切断时间，同时正确导入并验证服务器证书文件
+    ssh-server-ecdsa256.p12？
+  qtype: multihop
+  expected_doc_ids:
+  - h3c-r1110-security-cfg
+  expected_chunk_ids:
+  - h3c-r1110-security-cfg#c1485
+  - h3c-r1110-security-cfg#c190
+  filters: null
+- qid: h3c-r1110-l2sw-cfg#h3c-r1110-l2sw-cfg#c388+h3c-r1110-l2sw-cfg#c621
+  question: 在配置了 Voice VLAN 的网络设备上，如果需要关闭某个端口的生成树协议（通过命令 `undo stp enable`）以节省 CPU
+    资源，同时确保该端口处于 Voice VLAN 的普通模式下，应该如何操作才能避免网络环路的出现并防止恶意用户的流量攻击？
+  qtype: multihop
+  expected_doc_ids:
+  - h3c-r1110-l2sw-cfg
+  expected_chunk_ids:
+  - h3c-r1110-l2sw-cfg#c388
+  - h3c-r1110-l2sw-cfg#c621
+  filters: null
+- qid: h3c-r1110-iproute-cfg#h3c-r1110-iproute-cfg#c1015+h3c-r1110-iproute-cfg#c1094
+  question: 在配置BGP GTSM时，如果指定本地设备到达某个对等体的最大跳数为5，使用命令`display bgp [ instance instance-name
+    ] paths`显示BGP的路由属性信息时，接收到的BGP报文的合法TTL范围是多少？
+  qtype: multihop
+  expected_doc_ids:
+  - h3c-r1110-iproute-cfg
+  expected_chunk_ids:
+  - h3c-r1110-iproute-cfg#c1015
+  - h3c-r1110-iproute-cfg#c1094
+  filters: null
+- qid: h3c-r1110-security-cmd#h3c-r1110-security-cmd#c1019+h3c-r1110-security-cmd#c404
+  question: 如何配置SSH2协议使用HMAC-MD5算法，并且开启IPv4 Portal用户在线探测功能，设置探测类型为ICMP，探测次数为5，探测间隔为10秒，闲置时长为300秒？
+  qtype: multihop
+  expected_doc_ids:
+  - h3c-r1110-security-cmd
+  expected_chunk_ids:
+  - h3c-r1110-security-cmd#c1019
+  - h3c-r1110-security-cmd#c404
+  filters: null
+- qid: h3c-r1110-iproute-cfg#h3c-r1110-iproute-cfg#c1167+h3c-r1110-iproute-cfg#c1354
+  question: 如何通过配置RIPng的零域检查功能来提高BGP网络的可靠性，同时使用display bgp命令检查BGP NSR的运行状态？
+  qtype: multihop
+  expected_doc_ids:
+  - h3c-r1110-iproute-cfg
+  expected_chunk_ids:
+  - h3c-r1110-iproute-cfg#c1167
+  - h3c-r1110-iproute-cfg#c1354
+  filters: null
+- qid: reject-大模型训练任务的GPU资源调度-01
+  question: 在进行大规模模型训练时，如何通过Kubernetes的GPU资源调度器实现动态分配和回收GPU资源，以确保训练任务的高效运行和资源利用率的最大化？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-大模型推理服务的部署与扩缩容-02
+  question: 在部署大模型推理服务时，如何根据实际的推理请求量动态调整GPU资源，以确保服务的高效运行和成本优化？具体来说，使用Kubernetes进行扩缩容时，应该设置哪些关键参数，才能在保证模型性能的同时，避免资源浪费？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-基于RAG的大模型知识库问答系统搭建-03
+  question: 在搭建基于RAG的大模型知识库问答系统时，如何优化数据索引和检索效率，以确保在大规模数据集上能够快速响应用户查询？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-大模型Agent自动巡检网络设备-04
+  question: 大模型Agent自动巡检网络设备时，如何通过API接口获取设备的实时性能数据，并将这些数据与历史数据进行对比分析，以自动识别潜在的网络故障或性能瓶颈？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-大模型量化压缩后精度评估-05
+  question: 大模型量化压缩后，如何评估其精度损失？具体来说，使用INT8量化后，有哪些常用的评估指标和方法可以确保模型的性能仍然满足业务需求？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-大模型训练集群的故障域隔离-06
+  question: 在大模型训练集群中，如何通过故障域隔离来确保当某个节点或子网出现故障时，不会影响到整个集群的稳定运行？具体来说，如何设计和实现故障域隔离策略，以最小化故障扩散的风险，并保证训练任务的高可用性和容错性？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-大模型告警根因归因平台-07
+  question: 在使用大模型告警根因归因平台时，如何通过平台的告警聚合功能，有效减少因网络流量突增导致的重复告警，同时确保关键告警不会被遗漏？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-大模型prompt注入攻击防护-08
+  question: 在大模型的Prompt注入攻击防护中，如何通过调整模型的输入验证机制来防止恶意用户通过构造特定的Prompt来绕过安全限制，同时确保不影响模型的正常服务和用户体验？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Kubernetes CNI插件选型与安装-09
+  question: 在Kubernetes集群中，我需要选择一个合适的CNI插件来满足网络隔离和多租户的需求。目前考虑的是Calico和Flannel，但对它们的具体优缺点和适用场景不太清楚。另外，安装过程中需要注意哪些事项？比如Node网络配置、Pod
+    IP分配策略等。能否详细说明一下这两种插件的配置步骤和最佳实践？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Kubernetes service mesh流量治理-12
+  question: 在Kubernetes服务网格中，如何通过Istio实现对特定服务的流量路由和故障注入，以模拟网络延迟和断开，从而测试服务的弹性和容错能力？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Kubernetes集群etcd备份恢复-13
+  question: 在Kubernetes集群中，如何正确地进行etcd的备份和恢复操作？特别是在主etcd节点故障的情况下，如何确保数据的一致性和完整性，同时最小化对集群服务的影响？需要详细了解一下备份etcd时应该使用哪些命令，以及恢复过程中需要注意的事项，比如集群状态的检查、恢复后的验证步骤等。
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Zabbix监控交换机端口流量模板-18
+  question: 我在使用Zabbix监控交换机端口流量时，发现有些端口的流量数据总是显示不准确，怀疑是模板配置的问题。请问在Zabbix中配置交换机端口流量监控模板时，如何正确设置SNMP的OID来获取准确的入站和出站流量数据？另外，如果交换机是多速率的，比如同时支持1G和10G端口，模板中应该如何处理不同速率端口的流量监控？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Prometheus抓取网络设备指标-19
+  question: 我在使用Prometheus监控网络设备时，发现有些设备的SNMP OID路径比较特殊，导致Prometheus抓取不到某些关键指标，比如接口流量和CPU使用率。有没有什么方法可以自定义Prometheus的抓取规则，或者通过配置Exporter来解决这个问题？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-自动化巡检机器人编排-21
+  question: 在进行自动化巡检机器人的编排时，如何通过Ansible Playbook实现对不同厂商的网络设备（如Cisco、Huawei、Juniper）进行统一的巡检任务调度，同时确保巡检数据能够被集中收集并分析，以提高网络运维效率？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-运维工单系统与CMDB联动-23
+  question: 在运维工单系统与CMDB联动的过程中，如何通过工单触发CMDB的自动更新，确保配置项的实时准确性？同时，能否详细说明在这一过程中需要注意的权限管理问题，以及如何避免因工单操作导致的CMDB数据不一致？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-ELK日志平台采集网络设备日志-24
+  question: 我在使用ELK日志平台采集网络设备日志时，发现有些设备的日志格式不统一，导致日志解析出现问题。请问如何在Logstash中配置自定义的grok模式来解析这些非标准格式的日志，同时确保不影响其他设备日志的正常解析？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Dockerfile镜像构建优化-25
+  question: 在构建Docker镜像时，我发现每次修改Dockerfile后都需要重新构建整个镜像，这导致构建时间很长，尤其是在多层构建的情况下。有没有什么方法可以优化Dockerfile，减少不必要的层，或者利用缓存来加快构建速度？另外，我看到有些文档提到使用多阶段构建，这能具体怎么操作，对镜像大小和构建时间有什么影响？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-私有镜像仓库Harbor搭建-28
+  question: 我在搭建私有镜像仓库Harbor时，遇到了一个问题：如何配置Harbor以支持HTTPS访问，同时确保Nginx反向代理设置正确，不会出现证书错误或连接问题？需要详细的操作步骤和注意事项。
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Kubernetes Ingress流量暴露配置-10
+  question: Kubernetes Ingress配置中，如何通过Annotations设置Nginx Ingress Controller的负载均衡策略？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Kubernetes NetworkPolicy网络策略下发-11
+  question: Kubernetes NetworkPolicy策略下发后，如何验证Pod间的网络访问控制是否生效？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Kubernetes节点亲和性调度配置-14
+  question: Kubernetes节点亲和性调度中，如何配置pod反亲和性以避免同一应用的多个实例调度到同一个节点上？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Kubernetes Helm应用发布回滚-15
+  question: 在使用Helm发布Kubernetes应用时，如何通过命令行快速回滚到上一个稳定版本？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Kubernetes跨集群服务发现-16
+  question: Kubernetes跨集群服务发现中，如何配置Service Entry以实现多集群间的相互访问？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Ansible playbook批量配置下发-17
+  question: Ansible playbook批量配置下发时，如何确保所有网络设备配置同步完成后再进行下一步操作？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Grafana可视化监控大盘搭建-20
+  question: 在Grafana中如何配置Prometheus数据源以实现网络设备性能的实时监控？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-网络配置基线核查工具选型-22
+  question: 在进行网络配置基线核查时，如何选择合适的工具来确保与现有网络设备的兼容性？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Docker容器端口映射配置-26
+  question: 在Docker中，如何配置容器的端口映射，使宿主机的8080端口映射到容器的80端口？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-docker0网桥网段修改-27
+  question: 如何在Docker中修改docker0网桥的默认网段172.17.0.0/16为192.168.1.0/24？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Docker日志驱动与轮转-29
+  question: Docker日志驱动中，如何配置json-file驱动实现日志轮转，限制单个日志文件大小为10MB？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
+- qid: reject-Docker Swarm集群组网-30
+  question: Docker Swarm集群中，如何配置overlay网络以实现跨主机容器间的通信？
+  qtype: reject
+  expected_doc_ids: []
+  expected_chunk_ids: []
+  filters: null
