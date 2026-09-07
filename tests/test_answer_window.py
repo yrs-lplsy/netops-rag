@@ -108,6 +108,18 @@ def test_system_citation_numbers_correspond_to_passages():
     assert "引用编号" in SYSTEM
 
 
+def test_system_requires_contrast_statement_for_state_migration():
+    """T14 VLAN 类 6 题失败模式（t23-t28：看见「原接口失 IP + 新标签」却不点破迁移）：
+    prompt 必须要求对实况中跨接口/子接口移动的地址/VLAN/配置给出对比陈述（迁移关系），
+    不得只罗列各自状态；依据仍须来自实况输出（不违反反泄漏约束）。"""
+    assert "对比陈述" in SYSTEM
+    assert "迁移" in SYSTEM
+    assert "不得只罗列" in SYSTEM
+    # 既有约束不被稀释：逐论断原文依据 / 禁止自补 / 页脚 / 兜底全部仍在
+    assert "每个技术论断" in SYSTEM and "原文依据" in SYSTEM
+    assert "【出处】" in SYSTEM and "手册中未找到相关内容" in SYSTEM
+
+
 # ---------- build_generation_contexts：生成可见上下文的唯一装配函数（Run B）----------
 
 
