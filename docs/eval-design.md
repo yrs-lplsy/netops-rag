@@ -126,7 +126,7 @@ chunk 级上升而 doc 级持平，与缺陷机理预测一致——目录 chunk
   处置：保留本迭代史作为决策依据；候选方案（A 采用实测 80.6→88.8 / B 困难版 golden set 症状式问法重建）已记录待后续选择
 - 写作建议：对外表述时主动讲三层口径 + 本节迭代史（每轮用什么诊断定位问题、解法是什么）——比任何单一数字更能证明评测工程能力
 
-## 7. RAGAS faithfulness 迭代方案（已评审待执行，暂不跑）
+## 7. RAGAS faithfulness 迭代方案（已执行：基线→A→B→C→Run D final）
 
 基线（充值后重测，50 条分层抽样，有效 n=48-49）：faithfulness **0.654** / relevancy 0.800 / precision 0.881 / recall 0.844。
 
@@ -353,7 +353,9 @@ t24 经工具输出核验为 judge 误判——running-config 明确含 `interfa
 10.100.0.2/24`，judge reason 与该输出直接矛盾，官方分不改）；生成 prompt v3 两轮迭代期内
 t02（shutdown）补 running-config 后 0→PASS、cost 类同构修复 0/7→7/7。**组成口径如实声明**：
 29 = 24（2026-09-07 旧 prompt 下测得的 shutdown 6/6 + desc 9/9 + no_vlan 2/2 + cost 7/7，
-未全量复测；t02/t17/t30 本轮 --no-judge 抽查不回归）+ 5（v3 prompt + 双工具诊断下测得）。
+未全量复测；t02/t17/t30 本轮 --no-judge 抽查行为不回归，**但 v3 措辞对非 vlan 题有可观测
+外溢：t30（纯 IP 摘除）答案出现伪迁移句「地址已从原子接口迁移至 eth1 接口」1 题实测，
+judge 影响未测、全量 judge 覆盖缺失**）+ 5（v3 prompt + 双工具诊断下测得）。
 逐字记录见 [docs/eval-reports/2026-09-07-e2e-vlan-iter.md](eval-reports/2026-09-07-e2e-vlan-iter.md) §8-§13。
 
 **经验**：① 排障型评测的成败首先取决于**证据链是否闭合**——「目标事实只存在于某一视图」（config 行/接口表）时，诊断工具映射必须覆盖该视图，judge 无法凭手册补证；② 7B/72B 生成模型「看得见异常、说不出差异结论」（t23 看见 eth1.100 失 IP + eth1.200 down 但不点破迁移），对答案抽取的引导是下一层杠杆；③ 运行器直判校准把 judge 噪声从 tools 维度剥离（23/30 直判），judge 噪声残留集中在越权裁量场景；④ 生成端 prompt 迭代（2 轮）与诊断侧证据闭合的对比：前者 vlan 类仅 0/6→1/6，后者同口径 1/6→5/6——**证据可见性缺口无法靠措辞引导绕过**，先闭合证据链再谈生成（与 cost 类 0/7→7/7 同律）；⑤ lab 运维：clab 容器重启会丢数据面链路（OSPF 全空、仅剩 mgmt 口），须 `clab deploy --reconfigure` 重部并 `wait_healthy` 后方可评测。

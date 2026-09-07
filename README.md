@@ -157,13 +157,15 @@ make test           # 单测（283 passed，排除 milvus/gpu/lab 标记用例�
 - 拒答题内容重叠层（越低越好，可证伪口径）：naive 0.433 / hybrid 0.033 / +rerank 0.067。
 - 评测集质量机制：出题溯源到 chunk、grounding 审计、全量 QC 台账、TOC 目录页缺陷发现与修复（11 条坏题重指，chunk 级 +3.5/+1.8/+3.5pt、doc 级持平）——详见 [eval-design §4](docs/eval-design.md)。
 
-**RAGAS faithfulness 验证序列**（50 条分层抽样 seed=42，单变量逐步，[Run A](docs/eval-reports/2026-09-06-s3-ragas-runA-deepseek-judge.md) / [Run B](docs/eval-reports/2026-09-06-s3-ragas-runB-parent-window.md)）：
+**RAGAS 验证序列**（50 条分层抽样 seed=42，单变量逐步 + 最终口径，[Run A](docs/eval-reports/2026-09-06-s3-ragas-runA-deepseek-judge.md) / [Run B](docs/eval-reports/2026-09-06-s3-ragas-runB-parent-window.md) / [Run D final](docs/eval-reports/2026-09-08-s3-ragas-final.md)）：
 
 | 轮 | 变量 | faithfulness |
 |---|---|---|
 | T6 基线 | Qwen2.5-72B judge，child-chunks 装配 | 0.654 |
 | Run A | judge 换 DeepSeek（+0.098，judge 效应） | 0.752 |
-| Run B | contexts 装配改父块窗口（+0.049，装配效应） | **0.801** |
+| Run B | contexts 装配改父块窗口（+0.049，装配效应） | 0.801 |
+| Run C | 生成 prompt 收紧 v2（-0.046，含脚注伪影压分） | 0.755 |
+| **Run D（最终）** | prompt v3 + 评分伪影剥离（rel 0.904 / prec 0.851 / rec 0.884，四指标历史最高） | **0.851** |
 
 **复现命令**（需 Milvus + GPU + 模型 + `.env` 密钥）：
 
@@ -200,7 +202,7 @@ netops-rag/
 │   └── golden/              # 评测集 s1/s2/s3_full.yaml（200 条四类）
 ├── docs/
 │   ├── eval-design.md       # 口径设计 + TOC 缺陷案例 + 数字迭代史
-│   ├── eval-reports/        # 6 份脚本生成的评测报告（数字证据链）
+│   ├── eval-reports/        # 11 份脚本生成的评测报告（数字证据链）
 │   ├── reports/             # PDF 摄取管线 v1 报告
 │   └── demo.md              # 3 分钟现场演示脚本
 └── tests/                   # pytest（unit / milvus / gpu / lab 分层标记）
@@ -229,7 +231,7 @@ netops-rag/
 | 文档 | 内容 |
 |---|---|
 | [docs/eval-design.md](docs/eval-design.md) | 三层判据口径设计、拒答可证伪两层、golden set 质量机制、TOC 缺陷案例、数字迭代史、RAGAS 迭代方案 |
-| [docs/eval-reports/](docs/eval-reports/) | S1 基线 / S2 对比消融 / S3 检索 / RAGAS 基线与 Run A/B 共 6 份脚本生成报告 |
+| [docs/eval-reports/](docs/eval-reports/) | S1 基线 / S2 对比消融 / S3 检索 / RAGAS 基线与 Run A/B/C/D / CRAG / e2e 30 题 / vlan 迭代 共 11 份脚本生成报告 |
 
 
 ## License

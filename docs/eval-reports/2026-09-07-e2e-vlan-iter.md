@@ -145,9 +145,18 @@ handoff=0、`reset_all_clean=true`。
 | --- | --- | --- | --- |
 | t02（shutdown） | brief + neighbor + running（三元组不变） | eth3 down + shutdown 行 | 不回归 |
 | t17（desc 乱码） | get_running_config（单工具不变） | description=xx-unknown-777 | 不回归 |
-| t30（no_vlan） | show_vlan + get_running_config（新二元组） | eth1.100 IP 摘除确认 | 不回归 |
+| t30（no_vlan） | show_vlan + get_running_config（新二元组） | eth1.100 IP 摘除确认（主结论正确） | **不回归，带 1 处伪迁移句**（评审发现，见下） |
 
 数据：agent-20260908-020028.jsonl；6 调用 0 错误、`reset_all_clean=true`。
+
+**t30 伪迁移句（评审发现，逐字）**：答案主结论正确（「acc1 的 VLAN100 子接口的 IPv4
+地址确实已经消失」），但随后出现「对比之前的配置，VLAN100 的地址已从原子接口迁移至
+eth1 接口」——t30 为**纯 IP 摘除故障（no_vlan），不存在任何迁移**，且「迁移至 eth1 接口」
+指向父接口而非子接口，语义不通。该句为 v3 对比陈述引导对**非 vlan 题生成路径的可观测
+外溢**（引导句使模型在无迁移事实的场景也生成了迁移措辞）——v3 措辞对 24 条非 vlan 题
+并非惰性。注：本轮抽查为 `--no-judge`，该外溢对 judge 判分（conclusion_correct）的影响
+**未测**；t30 此前 judge 双真的基线在旧 prompt 下测得，v3 下若过 judge 该句是否致 FAIL
+未知（1 题实测外溢，全量 judge 覆盖缺失，记为 29/30 拼接口径的完整性限制）。
 
 ## 11. lab 事件与恢复（如实记录）
 

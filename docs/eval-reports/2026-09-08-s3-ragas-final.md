@@ -35,7 +35,9 @@
 - 评分口径：**artifact-stripped**（judge 只见 ragas_runner.strip_eval_artifacts 剥离后的答案——
   剥【出处】脚注块与"（手册片段未涉及，建议人工确认）"逃生舱句；两者恒被判无据陈述、
   系统性压低 faithfulness（0.333=1/3 定量实证）并拖垮 relevancy；原始答案仍入生成缓存与
-  逐条记录（raw_len/stripped_len）可审计）
+  逐条记录（raw_len/stripped_len）可审计）。**剥离边界**：本样本 3/50 条的脚注为行内
+  （非块尾）形态，不在剥离规则覆盖内——该 3 条 f 未被脚注压分（行内脚注未被判为独立
+  无据陈述句），影响可忽略；为不使代码与已测数字不一致，未扩大正则，仅记录边界
 - RAGAS：ragas 0.3.1，judge=deepseek（DEEPSEEK_MODEL env 值：deepseek-v4-flash）（temperature=0，LangchainLLMWrapper）；
   嵌入：本地 BAAI/bge-m3（dense，Bgem3LangchainEmbeddings）；
   ground truth = 期望子块全文（Milvus 点查拼接）；raise_exceptions=False
