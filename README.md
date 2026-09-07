@@ -220,7 +220,6 @@ netops-rag/
 - **中文问题 × 英文语料的 BM25 噪声**：S2 消融实测 BM25 单路 chunk R@5 仅 0.146（中文题与英文命令字段几乎无词法交集），三路等权融合曾把 dense 单路 0.689 拖低到 0.583——已由查询路由缓解（BM25 仅对 exact 类命令查询激活），未做跨语言检索优化。
 - **naive 在本 golden set 上天然强**：题目由期望 chunk 原文生成，naive 大窗口靠词面重叠轻易命中（S2 曾反超 hybrid 0.961 vs 0.583；语料扩容到 221 文档后 doc 级反转消失，chunk 级 naive 0.806 仍高于 hybrid 0.712）——对比必须带判据标注（naive 的 chunk 级为文本重叠口径，与 hybrid 严格 id 判据不混排）。
 - **RAGAS 英文 prompt × 中文语料未校准**：faithfulness/语句分类的绝对值只作相对对比（跨迭代基线），不与公开英文 benchmark 可比；【出处】脚注行会被陈述拆分计为无据句，系统性压低短答案分数（Run B 归因 7/7 已定量实证）。
-- **启动前目标口径的 67% 起点在任何已测配置下不存在**；88% 终点与 doc 级 hybrid+rerank 实测 0.888 吻合。处置与候选方案见 [eval-design §6](docs/eval-design.md)。
 - **语料固有缺口**：思科侧为 4 本整书配置指南（无故障处理卷），troubleshoot 题支撑弱于华为；2 条 multihop 次分块为薄 Feature History 段（已披露待改）。
 - **主机名提取启发式局限**：型号词（如 S5735）可能被误判为 host；API 层显式传 `host` 优先。
 - **生成缓存不入 git**（`data/llm_cache/`）：RAGAS 复现若无缓存首次全量生成（50 条 LLM 调用）；DeepSeek judge 为推理型计费，Run A+B 两轮实测 ≈¥17。
