@@ -230,6 +230,30 @@ child 文本与缓存逐字节比对通过）；报告：`docs/eval-reports/2026
   归因表指向的两项评测侧/检索侧修复优先级高于继续调生成 prompt；③judge 超时 NaN 增多提示
   parent-window+长答案下 240s timeout 与 max_workers=8 需重估（下一轮先降 workers 再看覆盖）。
 
+### 最终口径（2026-09-08，Run D：prompt v3 + 伪影剥离，`f5779fa`）
+
+第三轮 = 生成端 v3 prompt（v2 收紧 + 两轮对比陈述引导 `9892596`+`17f90e9`，答案 50/50 新生成）
++ 评测侧伪影剥离落地（ef9c4cb：judge 可见答案剥【出处】脚注与逃生舱句，Run C caveats ②的
+落地）；检索/装配/judge/temperature 全部未动。缓存另立
+`data/llm_cache/ragas_gen_s50_seed42_runD_final.json`。
+
+| 轮 | faithfulness | relevancy | precision | recall | 有效 n（f/rel/prec/rec） |
+|---|---|---|---|---|---|
+| Run B（prompt 旧） | 0.801 | 0.856 | 0.850 | 0.880 | 46/49/48/48 |
+| Run C（v2 收紧） | 0.755 | 0.792 | 0.883 | 0.883 | 42/49/48/48 |
+| **Run D（v3 + stripped，最终）** | **0.851** | **0.904** | 0.851 | 0.884 | **45/50/50/50** |
+| Δ(D−C) | +0.096 | +0.112 | -0.032 | +0.001 | |
+| Δ(D−B) | +0.050 | +0.048 | +0.001 | +0.004 | |
+
+- **Δ 归因（如实，双变量不可拆）**：D−C 同时含 prompt v2→v3 与剥离两效应——剥离为机械
+  回升（44/50 条被剥 12392 字符的恒判无据句）、「v3 净语义增益 = +0.096」不成立；
+  方向上「v3 至少无害、f/rel 为四轮历史最高、vs Run B 全指标不劣」成立。prec -0.032 在
+  ±0.1 抽样噪声内不解读。vlan 诊断工具修复不在 RAGAS 集生效路径（属 e2e 口径）。
+- 判分事件（如实）：首次完整判分误用 timeout=60s（Run B/C 口径为 240s）致 f 有效 n=15、
+  rec=18（79 次 TimeoutError），该轮数字作废；按 240s 重判后 TimeoutError 5 次、四指标
+  有效 n 全部 ≥40。judge 不缓存，两轮判分均实付 ≈¥15.2（余额 26.70→11.54）；402=0、429=0。
+  详见 [2026-09-08-s3-ragas-final.md](eval-reports/2026-09-08-s3-ragas-final.md)。
+
 ### CRAG 评测（对齐③，2026-09-07，troubleshoot 40 条开/关对比+救回损失配对）
 
 脚本 scripts/run_crag_eval.py（纯函数单测 tests/test_run_crag_eval_script.py；结果 store
@@ -320,5 +344,17 @@ QC"同 (host,kind,param) 不重复"规则分配给其余类——是否接受或
 
 **全量实测（2026-09-07，含 cost 类同构修复复测）**：最终口径 conclusion **24/30（80.0%）**，tools **30/30（100%）**；分类：接口关闭 6/6、描述乱码 9/9、IP 摘除 2/2、cost 抬高 7/7（修复前 0/7——show_ip_route 证「绕路存在」、running-config 证 cost 65535 行归因，与 shutdown 类同构）、**VLAN 标签改错 conclusion 0/6**（tools 6/6：证据已闭合，缺口纯在生成侧「地址迁移」表达，记为已知限制/潜在改进项）。首轮 56.7% → 最终 80.0% 的提升全部来自诊断证据链闭合（shutdown/cost 两类 +running-config），未动判分口径；未达 83.3% 目标（差 1 题），缺口即 VLAN 类。逐字记录见 [docs/eval-reports/2026-09-07-e2e-30.md](eval-reports/2026-09-07-e2e-30.md)。
 
-**经验**：① 排障型评测的成败首先取决于**证据链是否闭合**——「目标事实只存在于某一视图」（config 行/接口表）时，诊断工具映射必须覆盖该视图，judge 无法凭手册补证；② 7B/72B 生成模型「看得见异常、说不出差异结论」（t23 看见 eth1.100 失 IP + eth1.200 down 但不点破迁移），对答案抽取的引导是下一层杠杆；③ 运行器直判校准把 judge 噪声从 tools 维度剥离（23/30 直判），judge 噪声残留集中在越权裁量场景。
+**最终口径（2026-09-08，vlan 类诊断映射修复后）**：conclusion **29/30（96.7%）**，tools **30/30**。
+修复内容 = `_STATE_TOOL_MAP` vlan 类 `("vlan",)→("show_vlan", "get_running_config")`（`f5779fa`，
+与 shutdown/cost 类同构收尾：show_vlan 证子接口存在/失链、running-config 的 `no ip address`+
+迁移命令序列归因迁移方向——show_vlan 对 down 子接口不显示地址列，单工具下迁移方向不可判定，
+此为前口径 1/6 的真实根因）。vlan 类 1/6 → **5/6**（6/6 答案迁移方向全部正确；唯一 FAIL 的
+t24 经工具输出核验为 judge 误判——running-config 明确含 `interface eth1.300` + `ip address
+10.100.0.2/24`，judge reason 与该输出直接矛盾，官方分不改）；生成 prompt v3 两轮迭代期内
+t02（shutdown）补 running-config 后 0→PASS、cost 类同构修复 0/7→7/7。**组成口径如实声明**：
+29 = 24（2026-09-07 旧 prompt 下测得的 shutdown 6/6 + desc 9/9 + no_vlan 2/2 + cost 7/7，
+未全量复测；t02/t17/t30 本轮 --no-judge 抽查不回归）+ 5（v3 prompt + 双工具诊断下测得）。
+逐字记录见 [docs/eval-reports/2026-09-07-e2e-vlan-iter.md](eval-reports/2026-09-07-e2e-vlan-iter.md) §8-§13。
+
+**经验**：① 排障型评测的成败首先取决于**证据链是否闭合**——「目标事实只存在于某一视图」（config 行/接口表）时，诊断工具映射必须覆盖该视图，judge 无法凭手册补证；② 7B/72B 生成模型「看得见异常、说不出差异结论」（t23 看见 eth1.100 失 IP + eth1.200 down 但不点破迁移），对答案抽取的引导是下一层杠杆；③ 运行器直判校准把 judge 噪声从 tools 维度剥离（23/30 直判），judge 噪声残留集中在越权裁量场景；④ 生成端 prompt 迭代（2 轮）与诊断侧证据闭合的对比：前者 vlan 类仅 0/6→1/6，后者同口径 1/6→5/6——**证据可见性缺口无法靠措辞引导绕过**，先闭合证据链再谈生成（与 cost 类 0/7→7/7 同律）；⑤ lab 运维：clab 容器重启会丢数据面链路（OSPF 全空、仅剩 mgmt 口），须 `clab deploy --reconfigure` 重部并 `wait_healthy` 后方可评测。
 
